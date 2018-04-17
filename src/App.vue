@@ -1,20 +1,23 @@
 <template>
-    <app-navigation></app-navigation>
+    <root>
+        <app-navigation></app-navigation>
+    </root>
 </template>
 
 
 <script>
 import { StackNavigator } from "vue-native-router";
-import Home from "./screens/home/index";
+import { Root } from "native-base";
+import HomeScreen from "./screens/home/index";
 const AppNavigation = StackNavigator(
   {
-    Home: { screen: Home }
+    Home: { screen: HomeScreen }
   },
   {
     initialRouteName: "Home"
   }
 );
 export default {
-  components: { AppNavigation }
+  components: { Root, AppNavigation }
 };
 </script>
