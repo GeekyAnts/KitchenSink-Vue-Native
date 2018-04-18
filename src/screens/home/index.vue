@@ -13,5 +13,6 @@
 }
 .text-color-primary {
   color: blue;
+  font-family: Roboto;
 }
 </style>
