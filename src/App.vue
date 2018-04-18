@@ -14,7 +14,8 @@ const AppNavigation = StackNavigator(
     Home: { screen: HomeScreen }
   },
   {
-    initialRouteName: "Home"
+    initialRouteName: "Home",
+    headerMode: "none"
   }
 );
 export default {
