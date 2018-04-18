@@ -6,15 +6,29 @@
 
 
 <script>
-import { StackNavigator } from "vue-native-router";
+import { StackNavigator, DrawerNavigator } from "vue-native-router";
 import { Root } from "native-base";
-import HomeScreen from "./screens/home/index";
-const AppNavigation = StackNavigator(
+import HomeScreen from "./screens/home/index.vue";
+import SideBarScreen from "./screens/sidebar/index.vue";
+
+const Drawer = DrawerNavigator(
   {
     Home: { screen: HomeScreen }
   },
   {
     initialRouteName: "Home",
+    contentOptions: {
+      activeTintColor: "#e91e63"
+    }
+  }
+);
+
+const AppNavigation = StackNavigator(
+  {
+    Drawer: { screen: Drawer }
+  },
+  {
+    initialRouteName: "Drawer",
     headerMode: "none"
   }
 );
