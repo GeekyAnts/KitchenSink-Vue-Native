@@ -10,31 +10,31 @@
             </nb-button>
           </nb-left>
           <nb-body>
-            <nb-title>Custom Size Button</nb-title>
+            <nb-title>Default</nb-title>
           </nb-body>
           <nb-right />
         </nb-header>
 
         <nb-content padder class="content-wrapper">
-            <nb-button small light :style="{marginBottom: 20}">
-                <nb-text>Default Small </nb-text>
+            <nb-button light :style="{marginBottom: 20}">
+                <nb-text>Light</nb-text>
             </nb-button>
-            <nb-button success info :style="{marginBottom: 20}">
-                <nb-text>Success Default</nb-text>
+            <nb-button info :style="{marginBottom: 20}">
+                <nb-text>Info</nb-text>
             </nb-button>
-            <nb-button large primary :style="{marginBottom: 20}">
-                <nb-text>Dark Large</nb-text>
+            <nb-button primary :style="{marginBottom: 20}">
+                <nb-text>Primary</nb-text>
             </nb-button>
-            <nb-button block success :style="{marginBottom: 20}">
+            <nb-button success :style="{marginBottom: 20}">
                 <nb-text>Success</nb-text>
             </nb-button>
-            <nb-button block warning :style="{marginBottom: 20}">
+            <nb-button warning :style="{marginBottom: 20}">
                 <nb-text>Warning</nb-text>
             </nb-button>
-            <nb-button block danger :style="{marginBottom: 20}">
+            <nb-button danger :style="{marginBottom: 20}">
                 <nb-text>Danger</nb-text>
             </nb-button>
-            <nb-button block dark :style="{marginBottom: 20}">
+            <nb-button dark :style="{marginBottom: 20}">
                 <nb-text>Dark</nb-text>
             </nb-button>
         </nb-content>
@@ -44,6 +44,7 @@
 
 <style>
 .content-wrapper {
+  background-color: #fff;
   padding: 20;
 }
 </style>

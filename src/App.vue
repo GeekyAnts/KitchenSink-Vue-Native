@@ -39,6 +39,7 @@ import BadgeScreen from "./screens/badge";
 import ButtonScreen from "./screens/button";
 import BlockButtonScreen from "./screens/button/blockButton";
 import CustomButtonScreen from "./screens/button/customButton";
+import DefaultButtonScreen from "./screens/button/defaultButton";
 
 const Drawer = DrawerNavigator(
   {
@@ -84,7 +85,8 @@ const AppNavigation = StackNavigator(
     IconText: { screen: IconTextFooterScreen },
 
     Block: { screen: BlockButtonScreen },
-    Custom: { screen: CustomButtonScreen }
+    Custom: { screen: CustomButtonScreen },
+    Default: { screen: DefaultButtonScreen }
   },
   {
     initialRouteName: "Drawer",
