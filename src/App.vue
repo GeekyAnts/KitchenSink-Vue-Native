@@ -19,6 +19,7 @@ import IconActionSheetScreen from "./screens/actionSheet/icon";
 import HeaderScreen from "./screens/header";
 import Header1Screen from "./screens/header/header1";
 import Header2Screen from "./screens/header/header2";
+import Header3Screen from "./screens/header/header3";
 
 const Drawer = DrawerNavigator(
   {
@@ -45,7 +46,8 @@ const AppNavigation = StackNavigator(
     RegularActionSheet: { screen: RegularActionSheetScreen },
     IconActionSheet: { screen: IconActionSheetScreen },
     Header1: { screen: Header1Screen },
-    Header2: { screen: Header2Screen }
+    Header2: { screen: Header2Screen },
+    Header3: { screen: Header3Screen }
   },
   {
     initialRouteName: "Drawer",
