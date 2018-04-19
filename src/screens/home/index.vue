@@ -10,7 +10,7 @@
         <nb-h3 class="text-color-white">NativeBase Components</nb-h3>
       </view>
       <view :style="{ marginBottom: 80 }">
-        <nb-button :style="stylesObj.btnContainer">
+        <nb-button :style="stylesObj.btnContainer" :onPress="handleLetGoBtnPress">
           <nb-text> Lets Go!</nb-text>
         </nb-button>
       </view>
@@ -25,6 +25,11 @@ import launchScreenBg from "../../../assets/launchscreen-bg.png";
 import launchscreenLogo from "../../../assets/logo-kitchen-sink.png";
 
 export default {
+  props: {
+    navigation: {
+      type: Object
+    }
+  },
   data: function() {
     return {
       launchScreenBg: launchScreenBg,
@@ -43,6 +48,11 @@ export default {
         }
       }
     };
+  },
+  methods: {
+    handleLetGoBtnPress: function() {
+      this.navigation.navigate("DrawerOpen");
+    }
   }
 };
 </script>
