@@ -47,6 +47,8 @@ import OutlineButtonScreen from "./screens/button/outlineButton";
 import RoundedButtonScreen from "./screens/button/roundedButton";
 import TransparentButtonScreen from "./screens/button/transparentButton";
 
+import CardScreen from "./screens/card";
+
 const Drawer = DrawerNavigator(
   {
     Home: { screen: HomeScreen },
@@ -55,7 +57,8 @@ const Drawer = DrawerNavigator(
     Header: { screen: HeaderScreen },
     Footer: { screen: FooterScreen },
     NHBadge: { screen: BadgeScreen },
-    NHButton: { screen: ButtonScreen }
+    NHButton: { screen: ButtonScreen },
+    NHCard: { screen: CardScreen },
   },
   {
     initialRouteName: "Home",
