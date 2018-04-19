@@ -45,6 +45,7 @@ import FullButtonScreen from "./screens/button/fullButton";
 import IconButtonScreen from "./screens/button/iconButton";
 import OutlineButtonScreen from "./screens/button/outlineButton";
 import RoundedButtonScreen from "./screens/button/roundedButton";
+import TransparentButtonScreen from "./screens/button/transparentButton";
 
 const Drawer = DrawerNavigator(
   {
@@ -96,7 +97,8 @@ const AppNavigation = StackNavigator(
     Full: { screen: FullButtonScreen },
     IconBtn: { screen: IconButtonScreen },
     Outline: { screen: OutlineButtonScreen },
-    Rounded: { screen: RoundedButtonScreen }
+    Rounded: { screen: RoundedButtonScreen },
+    Transparent: { screen: TransparentButtonScreen }
   },
   {
     initialRouteName: "Drawer",
