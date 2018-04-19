@@ -1,6 +1,6 @@
 <template>
   <nb-container>
-    <nb-content class="sidebar-content-wrapper" bounce="false">
+    <nb-content class="sidebar-content-wrapper" :bounces="false">
       <image :source="drawerCover" class="drawer-cover" :style="stylesObj.drawerCoverObj"/>
       <image :source="drawerImage" class="drawer-image" :style="stylesObj.drawerImageObj"/>
       <nb-list>
