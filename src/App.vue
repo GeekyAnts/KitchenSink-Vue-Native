@@ -29,6 +29,7 @@ import HeaderNoShadowScreen from "./screens/header/headerNoShadow";
 import HeaderSpanScreen from "./screens/header/headerSpan";
 
 import FooterScreen from "./screens/footer";
+import BadgeFooterScreen from "./screens/footer/badgeFooter";
 
 const Drawer = DrawerNavigator(
   {
@@ -64,7 +65,9 @@ const AppNavigation = StackNavigator(
     Header7: { screen: Header7Screen },
     Header8: { screen: Header8Screen },
     HeaderNoShadow: { screen: HeaderNoShadowScreen },
-    HeaderSpan: { screen: HeaderSpanScreen }
+    HeaderSpan: { screen: HeaderSpanScreen },
+
+    BadgeFooter: { screen: BadgeFooterScreen }
   },
   {
     initialRouteName: "Drawer",
