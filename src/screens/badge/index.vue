@@ -37,6 +37,9 @@
             <nb-badge primary class="mb-10">
                 <nb-icon name="star" class="icon-star" />
             </nb-badge>
+            <nb-badge class="badge-custom-bg">
+                <nb-text>1866</nb-text>
+            </nb-badge>
         </nb-content>
 
       </nb-container>
@@ -50,5 +53,9 @@
   font-size: 15;
   color: #fff;
   line-height: 20;
+}
+.badge-custom-bg {
+  background-color: black;
+  color: white;
 }
 </style>
