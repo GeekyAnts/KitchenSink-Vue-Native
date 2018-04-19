@@ -13,6 +13,8 @@ import HomeScreen from "./screens/home/index.vue";
 import SideBarScreen from "./screens/sidebar/index.vue";
 import AnatomyScreen from "./screens/anatomy/index.vue";
 import ActionSheetScreen from "./screens/actionSheet/";
+import RegularActionSheetScreen from "./screens/actionSheet/regular";
+import IconActionSheetScreen from "./screens/actionSheet/icon";
 
 const Drawer = DrawerNavigator(
   {
@@ -34,7 +36,9 @@ const Drawer = DrawerNavigator(
 
 const AppNavigation = StackNavigator(
   {
-    Drawer: { screen: Drawer }
+    Drawer: { screen: Drawer },
+    RegularActionSheet: { screen: RegularActionSheetScreen },
+    IconActionSheet: { screen: IconActionSheetScreen }
   },
   {
     initialRouteName: "Drawer",
