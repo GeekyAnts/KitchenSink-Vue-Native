@@ -31,6 +31,7 @@ import HeaderSpanScreen from "./screens/header/headerSpan";
 import FooterScreen from "./screens/footer";
 import BadgeFooterScreen from "./screens/footer/badgeFooter";
 import BasicFooterScreen from "./screens/footer/basicFooter";
+import IconFooterScreen from "./screens/footer/iconFooter";
 
 const Drawer = DrawerNavigator(
   {
@@ -69,7 +70,8 @@ const AppNavigation = StackNavigator(
     HeaderSpan: { screen: HeaderSpanScreen },
 
     BadgeFooter: { screen: BadgeFooterScreen },
-    BasicFooter: { screen: BasicFooterScreen }
+    BasicFooter: { screen: BasicFooterScreen },
+    IconFooter: { screen: IconFooterScreen }
   },
   {
     initialRouteName: "Drawer",
