@@ -43,6 +43,7 @@ import DefaultButtonScreen from "./screens/button/defaultButton";
 import DisabledButtonScreen from "./screens/button/disableButton";
 import FullButtonScreen from "./screens/button/fullButton";
 import IconButtonScreen from "./screens/button/iconButton";
+import OutlineButtonScreen from "./screens/button/outlineButton";
 
 const Drawer = DrawerNavigator(
   {
@@ -92,7 +93,8 @@ const AppNavigation = StackNavigator(
     Default: { screen: DefaultButtonScreen },
     Disabled: { screen: DisabledButtonScreen },
     Full: { screen: FullButtonScreen },
-    IconBtn: { screen: IconButtonScreen }
+    IconBtn: { screen: IconButtonScreen },
+    Outline: { screen: OutlineButtonScreen }
   },
   {
     initialRouteName: "Drawer",
