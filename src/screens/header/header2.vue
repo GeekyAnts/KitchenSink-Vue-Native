@@ -21,7 +21,7 @@
             </nb-button>
           </nb-right>
         </nb-header>
-        <nb-content>
+        <nb-content padder>
             <nb-text>Header with Icon Buttons</nb-text>
         </nb-content>
     </nb-container>

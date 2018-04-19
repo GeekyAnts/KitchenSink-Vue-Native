@@ -8,7 +8,7 @@
           </nb-body>
           <nb-right />
         </nb-header>
-        <nb-content>
+        <nb-content padder>
             <nb-button :onPress="() => this.props.navigation.goBack()">
                 <nb-text>Back</nb-text>
             </nb-button>
