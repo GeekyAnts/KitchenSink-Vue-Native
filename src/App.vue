@@ -37,6 +37,7 @@ import IconTextFooterScreen from "./screens/footer/iconTextFooter";
 import BadgeScreen from "./screens/badge";
 
 import ButtonScreen from "./screens/button";
+import BlockButtonScreen from "./screens/button/blockButton";
 
 const Drawer = DrawerNavigator(
   {
@@ -79,7 +80,9 @@ const AppNavigation = StackNavigator(
     BadgeFooter: { screen: BadgeFooterScreen },
     BasicFooter: { screen: BasicFooterScreen },
     IconFooter: { screen: IconFooterScreen },
-    IconText: { screen: IconTextFooterScreen }
+    IconText: { screen: IconTextFooterScreen },
+
+    Block: { screen: BlockButtonScreen }
   },
   {
     initialRouteName: "Drawer",
