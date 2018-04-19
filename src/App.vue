@@ -12,11 +12,13 @@ import { Root } from "native-base";
 import HomeScreen from "./screens/home/index.vue";
 import SideBarScreen from "./screens/sidebar/index.vue";
 import AnatomyScreen from "./screens/anatomy/index.vue";
+import ActionSheetScreen from "./screens/actionSheet/";
 
 const Drawer = DrawerNavigator(
   {
     Home: { screen: HomeScreen },
-    Anatomy: { screen: AnatomyScreen }
+    Anatomy: { screen: AnatomyScreen },
+    Actionsheet: { screen: ActionSheetScreen }
   },
   {
     initialRouteName: "Home",
