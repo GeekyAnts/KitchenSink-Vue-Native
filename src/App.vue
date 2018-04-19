@@ -21,7 +21,10 @@ const Drawer = DrawerNavigator(
     contentOptions: {
       activeTintColor: "#e91e63"
     },
-    contentComponent: props => <SideBarScreen {...props} />
+    contentComponent: props => {
+      // console.log("props inside contentComponent", props);
+      return <SideBarScreen {...props} />;
+    }
   }
 );
 
