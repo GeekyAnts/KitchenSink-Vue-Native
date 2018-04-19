@@ -6,7 +6,7 @@
               transparent
               :onPress="() => this.props.navigation.goBack()"
             >
-              <nb-text> Back </nb-text>
+              <nb-icon name="arrow-back" />
             </nb-button>
           </nb-left>
           <nb-body>
@@ -22,7 +22,7 @@
           </nb-right>
         </nb-header>
         <nb-content>
-            <nb-text>Header with Text Buttons</nb-text>
+            <nb-text>Header with Icon Button & Text Buttons</nb-text>
         </nb-content>
     </nb-container>
 </template>
