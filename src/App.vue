@@ -28,12 +28,15 @@ import Header8Screen from "./screens/header/header8";
 import HeaderNoShadowScreen from "./screens/header/headerNoShadow";
 import HeaderSpanScreen from "./screens/header/headerSpan";
 
+import FooterScreen from "./screens/footer";
+
 const Drawer = DrawerNavigator(
   {
     Home: { screen: HomeScreen },
     Anatomy: { screen: AnatomyScreen },
     Actionsheet: { screen: ActionSheetScreen },
-    Header: { screen: HeaderScreen }
+    Header: { screen: HeaderScreen },
+    Footer: { screen: FooterScreen }
   },
   {
     initialRouteName: "Home",
