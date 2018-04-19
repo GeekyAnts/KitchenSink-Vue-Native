@@ -22,7 +22,9 @@
             <nb-button 
                 :active="tab1" 
                 :onPress="toggleTab1"
+
             >
+                <nb-icon name="apps" :active="tab1" />
                 <nb-text>Apps</nb-text>
             </nb-button>
             
@@ -30,6 +32,7 @@
                 :active="tab2" 
                 :onPress="toggleTab2"
             >
+                <nb-icon name="camera" :active="tab2" />
                 <nb-text>Camera</nb-text>
             </nb-button>
             
@@ -37,6 +40,7 @@
                 :active="tab3" 
                 :onPress="toggleTab3"
             >
+                <nb-icon name="compass" :active="tab3" />
                 <nb-text>Compass</nb-text>
             </nb-button>
             
@@ -44,6 +48,7 @@
                 :active="tab4" 
                 :onPress="toggleTab4"
             >
+                <nb-icon name="contact" :active="tab4" />
                 <nb-text>Contact</nb-text>
             </nb-button>
           </nb-footer-tab>

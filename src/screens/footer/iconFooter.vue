@@ -56,7 +56,7 @@
 export default {
   data: function() {
     return {
-      tab1: false,
+      tab1: true,
       tab2: false,
       tab3: false,
       tab4: false
