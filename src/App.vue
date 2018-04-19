@@ -34,13 +34,16 @@ import BasicFooterScreen from "./screens/footer/basicFooter";
 import IconFooterScreen from "./screens/footer/iconFooter";
 import IconTextFooterScreen from "./screens/footer/iconTextFooter";
 
+import BadgeScreen from "./screens/badge";
+
 const Drawer = DrawerNavigator(
   {
     Home: { screen: HomeScreen },
     Anatomy: { screen: AnatomyScreen },
     Actionsheet: { screen: ActionSheetScreen },
     Header: { screen: HeaderScreen },
-    Footer: { screen: FooterScreen }
+    Footer: { screen: FooterScreen },
+    NHBadge: { screen: BadgeScreen }
   },
   {
     initialRouteName: "Home",
