@@ -48,6 +48,7 @@ import RoundedButtonScreen from "./screens/button/roundedButton";
 import TransparentButtonScreen from "./screens/button/transparentButton";
 
 import CardScreen from "./screens/card";
+import BasicCardScreen from "./screens/card/basicCard";
 
 const Drawer = DrawerNavigator(
   {
@@ -58,7 +59,7 @@ const Drawer = DrawerNavigator(
     Footer: { screen: FooterScreen },
     NHBadge: { screen: BadgeScreen },
     NHButton: { screen: ButtonScreen },
-    NHCard: { screen: CardScreen },
+    NHCard: { screen: CardScreen }
   },
   {
     initialRouteName: "Home",
@@ -101,7 +102,9 @@ const AppNavigation = StackNavigator(
     IconBtn: { screen: IconButtonScreen },
     Outline: { screen: OutlineButtonScreen },
     Rounded: { screen: RoundedButtonScreen },
-    Transparent: { screen: TransparentButtonScreen }
+    Transparent: { screen: TransparentButtonScreen },
+
+    BasicCard: { screen: BasicCardScreen }
   },
   {
     initialRouteName: "Drawer",
