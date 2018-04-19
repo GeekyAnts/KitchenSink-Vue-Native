@@ -16,11 +16,14 @@ import ActionSheetScreen from "./screens/actionSheet/";
 import RegularActionSheetScreen from "./screens/actionSheet/regular";
 import IconActionSheetScreen from "./screens/actionSheet/icon";
 
+import HeaderScreen from "./screens/header";
+
 const Drawer = DrawerNavigator(
   {
     Home: { screen: HomeScreen },
     Anatomy: { screen: AnatomyScreen },
-    Actionsheet: { screen: ActionSheetScreen }
+    Actionsheet: { screen: ActionSheetScreen },
+    Header: { screen: HeaderScreen }
   },
   {
     initialRouteName: "Home",
