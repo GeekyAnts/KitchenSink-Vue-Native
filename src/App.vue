@@ -24,6 +24,7 @@ import Header4Screen from "./screens/header/header4";
 import Header5Screen from "./screens/header/header5";
 import Header6Screen from "./screens/header/header6";
 import Header7Screen from "./screens/header/header7";
+import Header8Screen from "./screens/header/header8";
 
 const Drawer = DrawerNavigator(
   {
@@ -55,7 +56,8 @@ const AppNavigation = StackNavigator(
     Header4: { screen: Header4Screen },
     Header5: { screen: Header5Screen },
     Header6: { screen: Header6Screen },
-    Header7: { screen: Header7Screen }
+    Header7: { screen: Header7Screen },
+    Header8: { screen: Header8Screen }
   },
   {
     initialRouteName: "Drawer",
