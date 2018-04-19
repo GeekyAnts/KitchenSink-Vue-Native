@@ -17,6 +17,7 @@ import RegularActionSheetScreen from "./screens/actionSheet/regular";
 import IconActionSheetScreen from "./screens/actionSheet/icon";
 
 import HeaderScreen from "./screens/header";
+import Header1Screen from "./screens/header/header1";
 
 const Drawer = DrawerNavigator(
   {
@@ -41,7 +42,8 @@ const AppNavigation = StackNavigator(
   {
     Drawer: { screen: Drawer },
     RegularActionSheet: { screen: RegularActionSheetScreen },
-    IconActionSheet: { screen: IconActionSheetScreen }
+    IconActionSheet: { screen: IconActionSheetScreen },
+    Header1: { screen: Header1Screen }
   },
   {
     initialRouteName: "Drawer",
