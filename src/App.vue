@@ -68,6 +68,7 @@ import BasicFabScreen from "./screens/fab/basicFab";
 import MultipleFabIconScreen from "./screens/fab/multipleFabIcon";
 
 import IconsScreen from "./screens/icons";
+import BasicIconScreen from "./screens/icons/basicIon";
 
 const Drawer = DrawerNavigator(
   {
@@ -140,7 +141,9 @@ const AppNavigation = StackNavigator(
     AdvancedDeck: { screen: AdvanceDeckSwiperScreen },
 
     BasicFab: { screen: BasicFabScreen },
-    MultipleFab: { screen: MultipleFabIconScreen }
+    MultipleFab: { screen: MultipleFabIconScreen },
+
+    BasicIcon: { screen: BasicIconScreen }
   },
   {
     initialRouteName: "Drawer",
