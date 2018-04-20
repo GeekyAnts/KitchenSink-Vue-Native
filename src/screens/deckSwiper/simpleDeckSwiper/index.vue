@@ -27,27 +27,13 @@
 
 <script>
 import React from "react";
-import { View, Image } from "react-native";
-import {
-  Container,
-  Header,
-  Title,
-  Button,
-  IconNB,
-  DeckSwiper,
-  Card,
-  CardItem,
-  Icon,
-  Thumbnail,
-  Text,
-  Left,
-  Right,
-  Body
-} from "native-base";
-import cardOne from "../../../assets/swiper-1.png";
-import cardTwo from "../../../assets/swiper-2.png";
-import cardThree from "../../../assets/swiper-3.png";
-import cardFour from "../../../assets/swiper-4.png";
+import { View, Text } from "react-native";
+import cardOne from "../../../../assets/swiper-1.png";
+import cardTwo from "../../../../assets/swiper-2.png";
+import cardThree from "../../../../assets/swiper-3.png";
+import cardFour from "../../../../assets/swiper-4.png";
+
+import CardComponent from "./card";
 
 export default {
   data: function() {
@@ -86,34 +72,7 @@ export default {
       );
     },
     handleCardRendering: function(item) {
-      return (
-        <Card style={{ elevation: 3 }}>
-          <CardItem>
-            <Left>
-              <Thumbnail source={item.image} />
-              <Body>
-                <Text>{item.text}</Text>
-                <Text note>NativeBase</Text>
-              </Body>
-            </Left>
-          </CardItem>
-          <CardItem cardBody>
-            <Image
-              style={{
-                resizeMode: "cover",
-                width: null,
-                flex: 1,
-                height: 300
-              }}
-              source={item.image}
-            />
-          </CardItem>
-          <CardItem>
-            <IconNB name={"ios-heart"} style={{ color: "#ED4A6A" }} />
-            <Text>{item.name}</Text>
-          </CardItem>
-        </Card>
-      );
+      return <CardComponent item={item} />;
     }
   }
 };

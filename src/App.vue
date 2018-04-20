@@ -60,7 +60,7 @@ import CardItemButtonScreen from "./screens/card/carItemButton";
 import CheckboxScreen from "./screens/checkbox";
 
 import DeckSwiperScreen from "./screens/deckSwiper";
-import SimpleDeckSwiperScreen from "./screens/deckSwiper/simpleDeckSwiper";
+import SimpleDeckSwiperScreen from "./screens/deckSwiper/simpleDeckSwiper/index";
 
 import FabScreen from "./screens/fab";
 
