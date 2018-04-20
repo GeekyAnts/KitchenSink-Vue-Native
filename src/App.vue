@@ -64,7 +64,8 @@ import SimpleDeckSwiperScreen from "./screens/deckSwiper/simpleDeckSwiper/index"
 import AdvanceDeckSwiperScreen from "./screens/deckSwiper/advancedDeckSwiper/index";
 
 import FabScreen from "./screens/fab";
-import BasicFabScreen from './screens/fab/basicFab';
+import BasicFabScreen from "./screens/fab/basicFab";
+import MultipleFabIconScreen from "./screens/fab/multipleFabIcon";
 
 const Drawer = DrawerNavigator(
   {
@@ -136,6 +137,7 @@ const AppNavigation = StackNavigator(
     AdvancedDeck: { screen: AdvanceDeckSwiperScreen },
 
     BasicFab: { screen: BasicFabScreen },
+    MultipleFab: { screen: MultipleFabIconScreen }
   },
   {
     initialRouteName: "Drawer",
