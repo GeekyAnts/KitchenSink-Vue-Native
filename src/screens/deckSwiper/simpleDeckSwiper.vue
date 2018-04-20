@@ -49,8 +49,6 @@ import cardTwo from "../../../assets/swiper-2.png";
 import cardThree from "../../../assets/swiper-3.png";
 import cardFour from "../../../assets/swiper-4.png";
 
-import TestFunctionalDeckSwiperComponent from "./testDeckSwiper";
-
 export default {
   data: function() {
     return {
