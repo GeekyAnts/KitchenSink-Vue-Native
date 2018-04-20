@@ -57,6 +57,8 @@ import CardTransparentScreen from "./screens/card/cardTransparent";
 import CardBorderedScreen from "./screens/card/cardBordered";
 import CardItemButtonScreen from "./screens/card/carItemButton";
 
+import CheckboxScreen from "./screens/checkbox";
+
 const Drawer = DrawerNavigator(
   {
     Home: { screen: HomeScreen },
@@ -66,7 +68,8 @@ const Drawer = DrawerNavigator(
     Footer: { screen: FooterScreen },
     NHBadge: { screen: BadgeScreen },
     NHButton: { screen: ButtonScreen },
-    NHCard: { screen: CardScreen }
+    NHCard: { screen: CardScreen },
+    NHCheckbox: { screen: CheckboxScreen }
   },
   {
     initialRouteName: "Home",
@@ -118,7 +121,7 @@ const AppNavigation = StackNavigator(
     NHCardShowcase: { screen: CardShowcaseScreen },
     NHCardTransparent: { screen: CardTransparentScreen },
     NHCardItemBordered: { screen: CardBorderedScreen },
-    NHCardItemButton: { screen: CardItemButtonScreen },
+    NHCardItemButton: { screen: CardItemButtonScreen }
   },
   {
     initialRouteName: "Drawer",
