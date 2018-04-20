@@ -54,6 +54,7 @@ import CardImageScreen from "./screens/card/cardImage";
 import CardListScreen from "./screens/card/cardList";
 import CardShowcaseScreen from "./screens/card/cardShowcase";
 import CardTransparentScreen from "./screens/card/cardTransparent";
+import CardBorderedScreen from "./screens/card/cardBordered";
 
 const Drawer = DrawerNavigator(
   {
@@ -114,7 +115,8 @@ const AppNavigation = StackNavigator(
     NHCardImage: { screen: CardImageScreen },
     NHCardList: { screen: CardListScreen },
     NHCardShowcase: { screen: CardShowcaseScreen },
-    NHCardTransparent: { screen: CardTransparentScreen }
+    NHCardTransparent: { screen: CardTransparentScreen },
+    NHCardItemBordered: { screen: CardBorderedScreen }
   },
   {
     initialRouteName: "Drawer",
