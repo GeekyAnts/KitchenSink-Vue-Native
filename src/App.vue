@@ -60,6 +60,7 @@ import CardItemButtonScreen from "./screens/card/carItemButton";
 import CheckboxScreen from "./screens/checkbox";
 
 import DeckSwiperScreen from "./screens/deckSwiper";
+import SimpleDeckSwiperScreen from "./screens/deckSwiper/simpleDeckSwiper";
 
 const Drawer = DrawerNavigator(
   {
@@ -72,7 +73,7 @@ const Drawer = DrawerNavigator(
     NHButton: { screen: ButtonScreen },
     NHCard: { screen: CardScreen },
     NHCheckbox: { screen: CheckboxScreen },
-    NHDeckSwiper: { screen: DeckSwiperScreen },
+    NHDeckSwiper: { screen: DeckSwiperScreen }
   },
   {
     initialRouteName: "Home",
@@ -124,7 +125,9 @@ const AppNavigation = StackNavigator(
     NHCardShowcase: { screen: CardShowcaseScreen },
     NHCardTransparent: { screen: CardTransparentScreen },
     NHCardItemBordered: { screen: CardBorderedScreen },
-    NHCardItemButton: { screen: CardItemButtonScreen }
+    NHCardItemButton: { screen: CardItemButtonScreen },
+
+    SimpleDeck: { screen: SimpleDeckSwiperScreen }
   },
   {
     initialRouteName: "Drawer",
