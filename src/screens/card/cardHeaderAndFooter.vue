@@ -18,7 +18,7 @@
         <nb-content padder>
             <nb-card class="mb-15">
                 <nb-card-item header>
-                    <nb-text>NativeBase</nb-text>
+                    <nb-text>Header & Footer Card</nb-text>
                 </nb-card-item>
 
                 <nb-card-item>
