@@ -67,6 +67,8 @@ import FabScreen from "./screens/fab";
 import BasicFabScreen from "./screens/fab/basicFab";
 import MultipleFabIconScreen from "./screens/fab/multipleFabIcon";
 
+import IconsScreen from "./screens/icons";
+
 const Drawer = DrawerNavigator(
   {
     Home: { screen: HomeScreen },
@@ -79,7 +81,8 @@ const Drawer = DrawerNavigator(
     NHCard: { screen: CardScreen },
     NHCheckbox: { screen: CheckboxScreen },
     NHDeckSwiper: { screen: DeckSwiperScreen },
-    NHFab: { screen: FabScreen }
+    NHFab: { screen: FabScreen },
+    NHIcon: { screen: IconsScreen }
   },
   {
     initialRouteName: "Home",

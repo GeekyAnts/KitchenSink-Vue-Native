@@ -10,7 +10,7 @@
             </nb-button>
           </nb-left>
           <nb-body>
-            <nb-title>Single FAB</nb-title>
+            <nb-title>Multiple FAB</nb-title>
           </nb-body>
           <nb-right />
         </nb-header>
