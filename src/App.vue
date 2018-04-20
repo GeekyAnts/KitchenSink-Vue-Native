@@ -61,6 +61,7 @@ import CheckboxScreen from "./screens/checkbox";
 
 import DeckSwiperScreen from "./screens/deckSwiper";
 import SimpleDeckSwiperScreen from "./screens/deckSwiper/simpleDeckSwiper/index";
+import AdvanceDeckSwiperScreen from "./screens/deckSwiper/advancedDeckSwiper/index";
 
 import FabScreen from "./screens/fab";
 
@@ -130,7 +131,8 @@ const AppNavigation = StackNavigator(
     NHCardItemBordered: { screen: CardBorderedScreen },
     NHCardItemButton: { screen: CardItemButtonScreen },
 
-    SimpleDeck: { screen: SimpleDeckSwiperScreen }
+    SimpleDeck: { screen: SimpleDeckSwiperScreen },
+    AdvancedDeck: { screen: AdvanceDeckSwiperScreen },
   },
   {
     initialRouteName: "Drawer",

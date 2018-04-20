@@ -16,6 +16,7 @@
         </nb-header>
         <view :style="{flex: 1, padding: 12}">
             <nb-deck-swiper
+                ref="_deckSwiper"
                 :dataSource="cardItemsArr"
                 :looping="isLoopingRequired"
                 :renderEmpty="handleCardEmpty"
@@ -23,7 +24,17 @@
             >
             </nb-deck-swiper>
         </view>
-  </nb-container>
+        <view :style="stylesObj.bottomBtnContainer">
+          <nb-button iconLeft :onPress="handleDeckSwiperBackBtn">
+            <nb-icon name="arrow-back" />
+            <nb-text>Swipe Left</nb-text>
+          </nb-button>
+          <nb-button iconRight :onPress="handleDeckSwiperForwardBtn">
+            <nb-text>Swipe Right</nb-text>
+            <nb-icon name="arrow-forward" />
+          </nb-button>
+        </View>
+    </nb-container>
 </template>
 
 <script>
@@ -61,7 +72,19 @@ export default {
           image: cardFour
         }
       ],
-      isLoopingRequired: false
+      isLoopingRequired: false,
+      stylesObj: {
+        bottomBtnContainer: {
+          flexDirection: "row",
+          flex: 1,
+          position: "absolute",
+          bottom: 50,
+          left: 0,
+          right: 0,
+          justifyContent: "space-between",
+          padding: 15
+        }
+      }
     };
   },
   methods: {
@@ -74,6 +97,13 @@ export default {
     },
     handleCardRendering: function(item) {
       return <CardComponent item={item} />;
+    },
+    handleDeckSwiperBackBtn: function() {
+      this._deckSwiper._root.swipeLeft();
+    },
+    handleDeckSwiperForwardBtn: function() {
+      console.log("this._deckSwiper", this.$refs._deckSwiper);
+      //   this._deckSwiper._root.swipeRight();
     }
   }
 };
