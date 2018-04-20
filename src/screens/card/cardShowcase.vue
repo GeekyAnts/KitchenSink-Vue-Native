@@ -38,7 +38,7 @@
                     <nb-left>
                         <nb-button transparent>
                             <nb-icon name="logo-github"></nb-icon>
-                            <nb-text>8000 stars</nb-text>
+                            <nb-text>8,000 stars</nb-text>
                         </nb-button>
                     </nb-left>
                 </nb-card-item>
