@@ -90,6 +90,8 @@ import ListSeparatorScreen from "./screens/list/separatorList";
 import ListThumbnailScreen from "./screens/list/thumbnailList";
 import ListItemSelectedScreen from "./screens/list/selectedListItem";
 
+import ListSwipeScreen from "./screens/listSwipe";
+
 const Drawer = DrawerNavigator(
   {
     Home: { screen: HomeScreen },
@@ -105,7 +107,8 @@ const Drawer = DrawerNavigator(
     NHFab: { screen: FabScreen },
     NHIcon: { screen: IconsScreen },
     NHLayout: { screen: LayoutScreen },
-    NHList: { screen: ListScreen }
+    NHList: { screen: ListScreen },
+    ListSwipe: { screen: ListSwipeScreen }
   },
   {
     initialRouteName: "Home",
