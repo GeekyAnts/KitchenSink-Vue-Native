@@ -77,6 +77,7 @@ import ListScreen from "./screens/list";
 import BasicListScreen from "./screens/list/basicList";
 import ListAvatarScreen from "./screens/list/avatarList";
 import ListDividerScreen from "./screens/list/dividerList";
+import ListHeaderScreen from "./screens/list/headerList";
 
 const Drawer = DrawerNavigator(
   {
@@ -159,7 +160,8 @@ const AppNavigation = StackNavigator(
 
     NHBasicList: { screen: BasicListScreen },
     NHListAvatar: { screen: ListAvatarScreen },
-    NHListDivider: { screen: ListDividerScreen }
+    NHListDivider: { screen: ListDividerScreen },
+    NHListHeader: { screen: ListHeaderScreen }
   },
   {
     initialRouteName: "Drawer",
