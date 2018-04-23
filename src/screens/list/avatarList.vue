@@ -16,7 +16,7 @@
         </nb-header>
         <nb-content padder>
             <nb-list>
-                <nb-list-item v-for="item in listItemArr" :key="item">
+                <nb-list-item v-for="item in listItemArr" :key="item.text">
                     <nb-left>
                         <nb-thumbnail small :source="item.img" />
                     </nb-left>
@@ -24,7 +24,7 @@
                         <nb-text>
                             {{item.text}}
                         </nb-text>
-                        <nb-text numberOfLines="1">
+                        <nb-text :numberOfLines="1">
                             {{item.note}}
                         </nb-text>
                     </nb-body>
