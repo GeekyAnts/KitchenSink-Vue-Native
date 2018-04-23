@@ -75,6 +75,7 @@ import PlatformSpecificIconScreen from "./screens/icons/platformSpecificIcon";
 
 import ListScreen from "./screens/list";
 import BasicListScreen from "./screens/list/basicList";
+import ListAvatarScreen from "./screens/list/avatarList";
 
 const Drawer = DrawerNavigator(
   {
@@ -155,7 +156,8 @@ const AppNavigation = StackNavigator(
     Icons: { screen: SimpleIconsScreen },
     PlatformSpecificIcon: { screen: PlatformSpecificIconScreen },
 
-    NHBasicList: { screen: BasicListScreen }
+    NHBasicList: { screen: BasicListScreen },
+    NHListAvatar: { screen: ListAvatarScreen }
   },
   {
     initialRouteName: "Drawer",
