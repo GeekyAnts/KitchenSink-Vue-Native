@@ -95,6 +95,8 @@ import BasicListSwipeScreen from "./screens/listSwipe/basicListSwipe";
 import MultiListSwipeScreen from "./screens/listSwipe/multiListSwiper";
 import CustomRowListSwipeScreen from "./screens/listSwipe/customRowListSwiper";
 
+import RadioScreen from "./screens/radio";
+
 const Drawer = DrawerNavigator(
   {
     Home: { screen: HomeScreen },
@@ -111,7 +113,8 @@ const Drawer = DrawerNavigator(
     NHIcon: { screen: IconsScreen },
     NHLayout: { screen: LayoutScreen },
     NHList: { screen: ListScreen },
-    ListSwipe: { screen: ListSwipeScreen }
+    ListSwipe: { screen: ListSwipeScreen },
+    NHRadio: { screen: RadioScreen }
   },
   {
     initialRouteName: "Home",
