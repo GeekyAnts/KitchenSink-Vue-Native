@@ -78,6 +78,7 @@ import ColumnLayoutScreen from "./screens/layout/columnLayout";
 import CustomColumnLayoutScreen from "./screens/layout/customColumnLayout";
 import RowLayoutScreen from "./screens/layout/rowLayout";
 import CustomRowLayoutScreen from "./screens/layout/customRowLayout";
+import NestedLayoutScreen from "./screens/layout/nestedLayout";
 
 import ListScreen from "./screens/list";
 import BasicListScreen from "./screens/list/basicList";
@@ -173,6 +174,7 @@ const AppNavigation = StackNavigator(
     CustomCol: { screen: CustomColumnLayoutScreen },
     RowNB: { screen: RowLayoutScreen },
     CustomRow: { screen: CustomRowLayoutScreen },
+    NestedGrid: { screen: NestedLayoutScreen },
 
     NHBasicList: { screen: BasicListScreen },
     NHListAvatar: { screen: ListAvatarScreen },
