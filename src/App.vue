@@ -93,6 +93,7 @@ import ListItemSelectedScreen from "./screens/list/selectedListItem";
 import ListSwipeScreen from "./screens/listSwipe";
 import BasicListSwipeScreen from "./screens/listSwipe/basicListSwipe";
 import MultiListSwipeScreen from "./screens/listSwipe/multiListSwiper";
+import CustomRowListSwipeScreen from "./screens/listSwipe/customRowListSwiper";
 
 const Drawer = DrawerNavigator(
   {
@@ -191,7 +192,8 @@ const AppNavigation = StackNavigator(
     NHListItemSelected: { screen: ListItemSelectedScreen },
 
     BasicListSwipe: { screen: BasicListSwipeScreen },
-    MultiListSwipe: { screen: MultiListSwipeScreen }
+    MultiListSwipe: { screen: MultiListSwipeScreen },
+    SwipeRowCustomStyle: { screen: CustomRowListSwipeScreen }
   },
   {
     initialRouteName: "Drawer",
