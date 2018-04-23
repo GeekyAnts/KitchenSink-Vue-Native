@@ -98,6 +98,8 @@ import CustomRowListSwipeScreen from "./screens/listSwipe/customRowListSwiper";
 import RadioScreen from "./screens/radio";
 import SearchScreen from "./screens/searchBar";
 
+import SegmentScreen from "./screens/segment";
+
 const Drawer = DrawerNavigator(
   {
     Home: { screen: HomeScreen },
@@ -116,7 +118,8 @@ const Drawer = DrawerNavigator(
     NHList: { screen: ListScreen },
     ListSwipe: { screen: ListSwipeScreen },
     NHRadio: { screen: RadioScreen },
-    NHSearchbar: { screen: SearchScreen }
+    NHSearchbar: { screen: SearchScreen },
+    Segment: { screen: SegmentScreen }
   },
   {
     initialRouteName: "Home",
