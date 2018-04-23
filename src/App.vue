@@ -73,6 +73,8 @@ import FamilyIconScreen from "./screens/icons/familyIcon";
 import SimpleIconsScreen from "./screens/icons/icon";
 import PlatformSpecificIconScreen from "./screens/icons/platformSpecificIcon";
 
+import LayoutScreen from "./screens/layout";
+
 import ListScreen from "./screens/list";
 import BasicListScreen from "./screens/list/basicList";
 import ListAvatarScreen from "./screens/list/avatarList";
@@ -97,6 +99,7 @@ const Drawer = DrawerNavigator(
     NHDeckSwiper: { screen: DeckSwiperScreen },
     NHFab: { screen: FabScreen },
     NHIcon: { screen: IconsScreen },
+    NHLayout: { screen: LayoutScreen },
     NHList: { screen: ListScreen }
   },
   {
