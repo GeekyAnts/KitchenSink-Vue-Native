@@ -69,6 +69,7 @@ import MultipleFabIconScreen from "./screens/fab/multipleFabIcon";
 
 import IconsScreen from "./screens/icons";
 import BasicIconScreen from "./screens/icons/basicIon";
+import FamilyIconScreen from "./screens/icons/familyIcon";
 
 const Drawer = DrawerNavigator(
   {
@@ -143,7 +144,8 @@ const AppNavigation = StackNavigator(
     BasicFab: { screen: BasicFabScreen },
     MultipleFab: { screen: MultipleFabIconScreen },
 
-    BasicIcon: { screen: BasicIconScreen }
+    BasicIcon: { screen: BasicIconScreen },
+    IconFamily: { screen: FamilyIconScreen }
   },
   {
     initialRouteName: "Drawer",

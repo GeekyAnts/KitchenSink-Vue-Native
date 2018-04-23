@@ -21,77 +21,77 @@
                     :style="{ width: 45, height: 45, justifyContent: 'center' }"
                 />
                 <nb-icon
-                active
-                name="pizza"
-                :style="{ width: 45, height: 45, justifyContent: 'center' }"
+                  active
+                  name="pizza"
+                  :style="{ width: 45, height: 45, justifyContent: 'center' }"
                 />
                 <nb-icon
-                name="person"
-                :style="{ width: 45, height: 45, justifyContent: 'center' }"
+                  name="person"
+                  :style="{ width: 45, height: 45, justifyContent: 'center' }"
                 />
                 <nb-icon
-                active
-                name="beer"
-                :style="{ width: 45, height: 45, justifyContent: 'center' }"
+                  active
+                  name="beer"
+                  :style="{ width: 45, height: 45, justifyContent: 'center' }"
                 />
                 <nb-icon
-                active
-                name="bicycle"
-                :style="{ width: 45, height: 45, justifyContent: 'center' }"
+                  active
+                  name="bicycle"
+                  :style="{ width: 45, height: 45, justifyContent: 'center' }"
                 />
                 <nb-icon
-                name="navigate"
-                :style="{ width: 45, height: 45, justifyContent: 'center' }"
+                  name="navigate"
+                  :style="{ width: 45, height: 45, justifyContent: 'center' }"
                 />
                 <nb-icon
-                active
-                name="cloud-circle"
-                :style="{ width: 45, height: 45, justifyContent: 'center' }"
+                  active
+                  name="cloud-circle"
+                  :style="{ width: 45, height: 45, justifyContent: 'center' }"
                 />
                 <nb-icon
-                name="pie"
-                :style="{ width: 45, height: 45, justifyContent: 'center' }"
+                  name="pie"
+                  :style="{ width: 45, height: 45, justifyContent: 'center' }"
                 />
                 <nb-icon
-                name="bookmarks"
-                :style="{ width: 45, height: 45, justifyContent: 'center' }"
+                  name="bookmarks"
+                  :style="{ width: 45, height: 45, justifyContent: 'center' }"
                 />
                 <nb-icon
-                active
-                name="pulse"
-                :style="{ width: 45, height: 45, justifyContent: 'center' }"
+                  active
+                  name="pulse"
+                  :style="{ width: 45, height: 45, justifyContent: 'center' }"
                 />
                 <nb-icon
-                name="camera"
-                :style="{ width: 45, height: 45, justifyContent: 'center' }"
-                />
-                <nb-icon
-                active
-                name="mic-off"
-                :style="{ width: 45, height: 45, justifyContent: 'center' }"
+                  name="camera"
+                  :style="{ width: 45, height: 45, justifyContent: 'center' }"
                 />
                 <nb-icon
                 active
-                name="film"
-                :style="{ width: 45, height: 45, justifyContent: 'center' }"
+                  name="mic-off"
+                  :style="{ width: 45, height: 45, justifyContent: 'center' }"
                 />
                 <nb-icon
-                active
-                name="flame"
-                :style="{ width: 45, height: 45, justifyContent: 'center' }"
+                  active
+                  name="film"
+                  :style="{ width: 45, height: 45, justifyContent: 'center' }"
                 />
                 <nb-icon
-                name="paper"
-                :style="{ width: 45, height: 45, justifyContent: 'center' }"
+                  active
+                  name="flame"
+                  :style="{ width: 45, height: 45, justifyContent: 'center' }"
                 />
                 <nb-icon
-                active
-                name="paper-plane"
-                :style="{ width: 45, height: 45, justifyContent: 'center' }"
+                  name="paper"
+                  :style="{ width: 45, height: 45, justifyContent: 'center' }"
                 />
                 <nb-icon
-                name="speedometer"
-                :style="{ width: 45, height: 45, justifyContent: 'center' }"
+                  active
+                  name="paper-plane"
+                  :style="{ width: 45, height: 45, justifyContent: 'center' }"
+                />
+                <nb-icon
+                  name="speedometer"
+                  :style="{ width: 45, height: 45, justifyContent: 'center' }"
                 />
                 <nb-icon
                 name="cart"
@@ -311,95 +311,95 @@
                 :style="{ width: 45, height: 45, justifyContent: 'center' }"
                 />
                 <nb-icon
-                active
-                name="archive"
-                :style="{ width: 45, height: 45, justifyContent: 'center' }"
+                  active
+                  name="archive"
+                  :style="{ width: 45, height: 45, justifyContent: 'center' }"
                 />
                 <nb-icon
-                active
-                name="bookmark"
-                :style="{ width: 45, height: 45, justifyContent: 'center' }"
+                  active
+                  name="bookmark"
+                  :style="{ width: 45, height: 45, justifyContent: 'center' }"
                 />
                 <nb-icon
-                active
-                name="clipboard"
-                :style="{ width: 45, height: 45, justifyContent: 'center' }"
+                  active
+                  name="clipboard"
+                  :style="{ width: 45, height: 45, justifyContent: 'center' }"
                 />
                 <nb-icon
-                active
-                name="happy"
-                :style="{ width: 45, height: 45, justifyContent: 'center' }"
+                  active
+                  name="happy"
+                  :style="{ width: 45, height: 45, justifyContent: 'center' }"
                 />
                 <nb-icon
-                active
-                name="share"
-                :style="{ width: 45, height: 45, justifyContent: 'center' }"
+                  active
+                  name="share"
+                  :style="{ width: 45, height: 45, justifyContent: 'center' }"
                 />
                 <nb-icon
-                active
-                name="bluetooth"
-                :style="{ width: 45, height: 45, justifyContent: 'center' }"
+                  active
+                  name="bluetooth"
+                  :style="{ width: 45, height: 45, justifyContent: 'center' }"
                 />
                 <nb-icon
-                active
-                name="search"
-                :style="{ width: 45, height: 45, justifyContent: 'center' }"
+                  active
+                  name="search"
+                  :style="{ width: 45, height: 45, justifyContent: 'center' }"
                 />
                 <nb-icon
-                active
-                name="wifi"
-                :style="{ width: 45, height: 45, justifyContent: 'center' }"
+                  active
+                  name="wifi"
+                  :style="{ width: 45, height: 45, justifyContent: 'center' }"
                 />
                 <nb-icon
-                name="hand"
-                :style="{ width: 45, height: 45, justifyContent: 'center' }"
+                  name="hand"
+                  :style="{ width: 45, height: 45, justifyContent: 'center' }"
                 />
                 <nb-icon
-                active
-                name="trash"
-                :style="{ width: 45, height: 45, justifyContent: 'center' }"
+                  active
+                  name="trash"
+                  :style="{ width: 45, height: 45, justifyContent: 'center' }"
                 />
                 <nb-icon
-                active
-                name="images"
-                :style="{ width: 45, height: 45, justifyContent: 'center' }"
+                  active
+                  name="images"
+                  :style="{ width: 45, height: 45, justifyContent: 'center' }"
                 />
                 <nb-icon
-                active
-                name="attach"
-                :style="{ width: 45, height: 45, justifyContent: 'center' }"
+                  active
+                  name="attach"
+                  :style="{ width: 45, height: 45, justifyContent: 'center' }"
                 />
                 <nb-icon
-                name="logo-facebook"
-                :style="{ width: 45, height: 45, justifyContent: 'center' }"
+                  name="logo-facebook"
+                  :style="{ width: 45, height: 45, justifyContent: 'center' }"
                 />
                 <nb-icon
-                name="logo-googleplus"
-                :style="{ width: 45, height: 45, justifyContent: 'center' }"
+                  name="logo-googleplus"
+                  :style="{ width: 45, height: 45, justifyContent: 'center' }"
                 />
                 <nb-icon
-                name="logo-twitter"
-                :style="{ width: 45, height: 45, justifyContent: 'center' }"
+                  name="logo-twitter"
+                  :style="{ width: 45, height: 45, justifyContent: 'center' }"
                 />
                 <nb-icon
-                name="logo-github"
-                :style="{ width: 45, height: 45, justifyContent: 'center' }"
+                  name="logo-github"
+                  :style="{ width: 45, height: 45, justifyContent: 'center' }"
                 />
                 <nb-icon
-                name="logo-whatsapp"
-                :style="{ width: 45, height: 45, justifyContent: 'center' }"
+                  name="logo-whatsapp"
+                  :style="{ width: 45, height: 45, justifyContent: 'center' }"
                 />
                 <nb-icon
-                name="logo-wordpress"
-                :style="{ width: 45, height: 45, justifyContent: 'center' }"
+                  name="logo-wordpress"
+                  :style="{ width: 45, height: 45, justifyContent: 'center' }"
                 />
                 <nb-icon
-                name="logo-youtube"
-                :style="{ width: 45, height: 45, justifyContent: 'center' }"
+                  name="logo-youtube"
+                  :style="{ width: 45, height: 45, justifyContent: 'center' }"
                 />
                 <nb-icon
-                name="mail"
-                :style="{ width: 45, height: 45, justifyContent: 'center' }"
+                  name="mail"
+                  :style="{ width: 45, height: 45, justifyContent: 'center' }"
                 />
             </view>
         </nb-content>
@@ -410,7 +410,6 @@
 export default {
   data: function() {
     return {
-      isFabIconActive: false,
       stylesObj: {
         container: {
           flex: 1,
@@ -439,11 +438,6 @@ export default {
         }
       }
     };
-  },
-  methods: {
-    handleFabIconPress: function() {
-      this.isFabIconActive = !this.isFabIconActive;
-    }
   }
 };
 </script>

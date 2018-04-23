@@ -41,9 +41,6 @@ export default {
       type: Object
     }
   },
-  created: function() {
-    console.log("inside sidebar created function", this.navigation);
-  },
   data: function() {
     return {
       drawerCover: drawerCover,
