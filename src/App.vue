@@ -104,6 +104,8 @@ import SegmentTabScreen from "./screens/segment/segmentTab";
 
 import SpinnerScreen from "./screens/spinner";
 
+import TabScreen from "./screens/tabs";
+
 const Drawer = DrawerNavigator(
   {
     Home: { screen: HomeScreen },
@@ -124,7 +126,8 @@ const Drawer = DrawerNavigator(
     NHRadio: { screen: RadioScreen },
     NHSearchbar: { screen: SearchScreen },
     Segment: { screen: SegmentScreen },
-    NHSpinner: { screen: SpinnerScreen }
+    NHSpinner: { screen: SpinnerScreen },
+    NHTab: { screen: TabScreen }
   },
   {
     initialRouteName: "Home",
