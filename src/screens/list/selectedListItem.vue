@@ -53,34 +53,12 @@ export default {
       //   that123: this
     };
   },
-  //   created() {
-  //     console.log("inside created function");
-  //     this.updatedSelectedItem("Joe Allen");
-  //   },
-  //   updated() {
-  //     console.log("inside updated function");
-  //     this.updatedSelectedItem("Phil Coutinho");
-  //   },
-  //   beforeUpdate() {
-  //     console.log("inside updated function");
-  //     this.updatedSelectedItem("Alberto Moreno");
-  //   },
-  //   mounted() {
-  //     console.log("inside updated function");
-  //   },
+
   methods: {
     updatedSelectedItem: function(value) {
-      //   console.log("value", value);
-      //   if (this === this.that123) {
-      //     console.log("yes this reference is same");
-      //   }
       this.selected = value;
     },
     getFlatListRenderItem: function(item, index) {
-      //   const that = this;
-      //   if (this.that123 === this) {
-      //     console.log("yeah reference is same");
-      //   }
       return (
         <ListItem
           selected={this.selected === item}

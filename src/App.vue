@@ -74,6 +74,7 @@ import SimpleIconsScreen from "./screens/icons/icon";
 import PlatformSpecificIconScreen from "./screens/icons/platformSpecificIcon";
 
 import LayoutScreen from "./screens/layout";
+import ColumnLayoutScreen from "./screens/layout/columnLayout";
 
 import ListScreen from "./screens/list";
 import BasicListScreen from "./screens/list/basicList";
@@ -164,6 +165,8 @@ const AppNavigation = StackNavigator(
     IconFamily: { screen: FamilyIconScreen },
     Icons: { screen: SimpleIconsScreen },
     PlatformSpecificIcon: { screen: PlatformSpecificIconScreen },
+
+    ColumnNB: { screen: ColumnLayoutScreen },
 
     NHBasicList: { screen: BasicListScreen },
     NHListAvatar: { screen: ListAvatarScreen },
