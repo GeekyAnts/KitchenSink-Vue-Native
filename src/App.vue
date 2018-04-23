@@ -91,6 +91,7 @@ import ListThumbnailScreen from "./screens/list/thumbnailList";
 import ListItemSelectedScreen from "./screens/list/selectedListItem";
 
 import ListSwipeScreen from "./screens/listSwipe";
+import BasicListSwipeScreen from "./screens/listSwipe/basicListSwipe";
 
 const Drawer = DrawerNavigator(
   {
@@ -186,7 +187,9 @@ const AppNavigation = StackNavigator(
     NHListIcon: { screen: ListIconScreen },
     NHListSeparator: { screen: ListSeparatorScreen },
     NHListThumbnail: { screen: ListThumbnailScreen },
-    NHListItemSelected: { screen: ListItemSelectedScreen }
+    NHListItemSelected: { screen: ListItemSelectedScreen },
+
+    BasicListSwipe: { screen: BasicListSwipeScreen }
   },
   {
     initialRouteName: "Drawer",
