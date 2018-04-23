@@ -14,7 +14,7 @@
           </nb-body>
           <nb-right />
         </nb-header>
-        <nb-content scrollEnabled="false">
+        <nb-content :scrollEnabled="false">
             <nb-swipe-row 
                 :leftOpenValue="75"
                 :rightOpenValue="-75"
