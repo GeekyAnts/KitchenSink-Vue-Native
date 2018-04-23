@@ -71,6 +71,7 @@ import IconsScreen from "./screens/icons";
 import BasicIconScreen from "./screens/icons/basicIon";
 import FamilyIconScreen from "./screens/icons/familyIcon";
 import SimpleIconsScreen from "./screens/icons/icon";
+import PlatformSpecificIconScreen from "./screens/icons/platformSpecificIcon";
 
 const Drawer = DrawerNavigator(
   {
@@ -147,7 +148,8 @@ const AppNavigation = StackNavigator(
 
     BasicIcon: { screen: BasicIconScreen },
     IconFamily: { screen: FamilyIconScreen },
-    Icons: { screen: SimpleIconsScreen }
+    Icons: { screen: SimpleIconsScreen },
+    PlatformSpecificIcon: { screen: PlatformSpecificIconScreen }
   },
   {
     initialRouteName: "Drawer",
