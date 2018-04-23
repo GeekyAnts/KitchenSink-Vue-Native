@@ -100,6 +100,7 @@ import SearchScreen from "./screens/searchBar";
 
 import SegmentScreen from "./screens/segment";
 import SegmentHeaderScreen from "./screens/segment/segmentHeader";
+import SegmentTabScreen from "./screens/segment/segmentTab";
 
 const Drawer = DrawerNavigator(
   {
@@ -204,7 +205,8 @@ const AppNavigation = StackNavigator(
     MultiListSwipe: { screen: MultiListSwipeScreen },
     SwipeRowCustomStyle: { screen: CustomRowListSwipeScreen },
 
-    BasicSegment: { screen: SegmentHeaderScreen }
+    BasicSegment: { screen: SegmentHeaderScreen },
+    AdvSegment: { screen: SegmentTabScreen }
   },
   {
     initialRouteName: "Drawer",
