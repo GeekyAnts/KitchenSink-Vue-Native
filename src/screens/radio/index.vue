@@ -27,6 +27,9 @@
                         :selected="radio1"
                         :onPress="toggleRadio1"
                     />
+                    <text v-if="radio1" :class="[{'text-primary': radio1==true}]">
+                      checked
+                    </text>
                 </nb-right>
             </nb-list-item>
             <nb-list-item
@@ -41,6 +44,9 @@
                     :selected="radio2"
                     :onPress="toggleRadio2"
                 />
+                <text v-if="radio2" :class="[{'text-warning': radio2==true}]">
+                    checked
+                </text>
                 </nb-right>
             </nb-list-item>
             <nb-list-item
@@ -55,6 +61,9 @@
                       :selected="radio3"
                       :onPress="toggleRadio3"
                   />
+                  <text v-if="radio3" :class="[{'text-success': radio3==true}]">
+                    checked
+                  </text>
                 </nb-right>
             </nb-list-item>
             <nb-list-item
@@ -68,7 +77,14 @@
                 <nb-radio
                     :selected="radio4"
                     :onPress="toggleRadio4"
+                    :style="[stylesObj.checkBoxPaddingTop, stylesObj.checkBoxBgColor]"
                 />
+                <!-- <text :class="[{'text-danger': radio4==true}]">
+                  Checked
+                </text> -->
+                <text v-if="radio4" :class="[{'text-danger': radio4==true}, 'bg-primary']">
+                  checked
+                </text>
                 </nb-right>
             </nb-list-item>
         </nb-content>
@@ -83,7 +99,17 @@ export default {
       radio1: false,
       radio2: false,
       radio3: false,
-      radio4: true
+      radio4: true,
+      textDanger: "text-danger",
+      stylesObj: {
+        checkBoxPaddingTop: {
+          paddingTop: 15
+        },
+        checkBoxBgColor: {
+          backgroundColor: "blue",
+          paddingTop: 20
+        }
+      }
     };
   },
   methods: {
@@ -111,6 +137,9 @@ export default {
       this.radio3 = false;
       this.radio4 = true;
     }
+  },
+  updated() {
+    console.log("yes update lifecycle methods is called");
   }
 };
 </script>
@@ -119,5 +148,20 @@ export default {
 <style>
 .body-icon-color {
   color: #999;
+}
+.text-primary {
+  color: blue;
+}
+.text-warning {
+  color: yellow;
+}
+.text-success {
+  color: green;
+}
+.text-danger {
+  color: rgb(245, 9, 87);
+}
+.bg-primary {
+  background-color: aqua;
 }
 </style>
