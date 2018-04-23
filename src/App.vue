@@ -79,6 +79,7 @@ import ListAvatarScreen from "./screens/list/avatarList";
 import ListDividerScreen from "./screens/list/dividerList";
 import ListHeaderScreen from "./screens/list/headerList";
 import ListIconScreen from "./screens/list/iconList";
+import ListSeparatorScreen from "./screens/list/separatorList";
 
 const Drawer = DrawerNavigator(
   {
@@ -163,7 +164,8 @@ const AppNavigation = StackNavigator(
     NHListAvatar: { screen: ListAvatarScreen },
     NHListDivider: { screen: ListDividerScreen },
     NHListHeader: { screen: ListHeaderScreen },
-    NHListIcon: { screen: ListIconScreen }
+    NHListIcon: { screen: ListIconScreen },
+    NHListSeparator: { screen: ListSeparatorScreen }
   },
   {
     initialRouteName: "Drawer",
