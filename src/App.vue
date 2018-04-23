@@ -73,6 +73,8 @@ import FamilyIconScreen from "./screens/icons/familyIcon";
 import SimpleIconsScreen from "./screens/icons/icon";
 import PlatformSpecificIconScreen from "./screens/icons/platformSpecificIcon";
 
+import ListScreen from "./screens/list";
+
 const Drawer = DrawerNavigator(
   {
     Home: { screen: HomeScreen },
@@ -86,7 +88,8 @@ const Drawer = DrawerNavigator(
     NHCheckbox: { screen: CheckboxScreen },
     NHDeckSwiper: { screen: DeckSwiperScreen },
     NHFab: { screen: FabScreen },
-    NHIcon: { screen: IconsScreen }
+    NHIcon: { screen: IconsScreen },
+    NHList: { screen: ListScreen }
   },
   {
     initialRouteName: "Home",
