@@ -114,6 +114,7 @@ import ThumbnailScreen from "./screens/thumbnail";
 import ToastScreen from "./screens/toast";
 import BasicToastScreen from "./screens/toast/basicToast";
 import ToastButtonStyleScreen from "./screens/toast/toastButton";
+import ToastDurationScreen from "./screens/toast/toastDuration";
 
 const Drawer = DrawerNavigator(
   {
@@ -230,7 +231,8 @@ const AppNavigation = StackNavigator(
     ScrollableTab: { screen: ScrollableTabaScreen },
 
     BasicToast: { screen: BasicToastScreen },
-    ToastButton: { screen: ToastButtonStyleScreen }
+    ToastButton: { screen: ToastButtonStyleScreen },
+    ToastDuration: { screen: ToastDurationScreen }
   },
   {
     initialRouteName: "Drawer",
