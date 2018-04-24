@@ -117,8 +117,9 @@ import HeaderPickerScreen from "./screens/picker/headerPicker";
 import HeaderStylePickerScreen from "./screens/picker/headerStylePicker";
 import PickerTextItemTextScreen from "./screens/picker/pickerTextItemText";
 import PickerIconScreen from "./screens/picker/pickerWithIcon";
-import PickerWithPlaceHolder from "./screens/picker/placeHolderPicker";
+import PickerWithPlaceHolderScreen from "./screens/picker/placeHolderPicker";
 import PickerWithPlaceHolderNoteScreen from "./screens/picker/placeholderPickerNote";
+import RegularPickerScreen from "./screens/picker/regularPicker";
 
 import RadioScreen from "./screens/radio";
 import SearchScreen from "./screens/searchBar";
@@ -276,8 +277,9 @@ const AppNavigation = StackNavigator(
     HeaderStylePicker: { screen: HeaderStylePickerScreen },
     PickerTextItemText: { screen: PickerTextItemTextScreen },
     PickerWithIcon: { screen: PickerIconScreen },
-    PlaceholderPicker: { screen: PickerWithPlaceHolder },
+    PlaceholderPicker: { screen: PickerWithPlaceHolderScreen },
     PlaceholderPickerNote: { screen: PickerWithPlaceHolderNoteScreen },
+    RegularPicker: { screen: RegularPickerScreen },
 
     BasicSegment: { screen: SegmentHeaderScreen },
     AdvSegment: { screen: SegmentTabScreen },
