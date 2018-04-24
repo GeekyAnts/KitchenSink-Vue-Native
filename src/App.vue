@@ -71,6 +71,7 @@ import FormScreen from "./screens/form";
 import DisabledInputFormScreen from "./screens/form/disabledInput";
 import ErrorInputFormScreen from "./screens/form/errorInput";
 import FixedLabelInputFormScreen from "./screens/form/fixedLabelInput";
+import FloatingLabelInputFormScreen from "./screens/form/floatingLabelInput";
 
 import IconsScreen from "./screens/icons";
 import BasicIconScreen from "./screens/icons/basicIon";
@@ -214,6 +215,7 @@ const AppNavigation = StackNavigator(
     DisabledInput: { screen: DisabledInputFormScreen },
     ErrorInput: { screen: ErrorInputFormScreen },
     FixedLabel: { screen: FixedLabelInputFormScreen },
+    FloatingLabel: { screen: FloatingLabelInputFormScreen },
 
     BasicIcon: { screen: BasicIconScreen },
     IconFamily: { screen: FamilyIconScreen },
