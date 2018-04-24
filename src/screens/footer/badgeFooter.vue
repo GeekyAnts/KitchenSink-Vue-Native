@@ -10,7 +10,7 @@
             </nb-button>
           </nb-left>
           <nb-body>
-            <nb-title>Footer</nb-title>
+            <nb-title>Badge Footer</nb-title>
           </nb-body>
           <nb-right />
         </nb-header>
