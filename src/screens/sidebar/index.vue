@@ -167,7 +167,9 @@ export default {
           name: "Picker",
           route: "NHPicker",
           icon: "arrow-dropdown",
-          bg: "#F50C75"
+          bg: "#F50C75",
+          bg: "#cc0000",
+          types: "9"
         },
         {
           name: "Radio",
@@ -204,9 +206,7 @@ export default {
         {
           name: "Thumbnail",
           route: "NHThumbnail",
-          icon: "image",
-          bg: "#cc0000",
-          types: "2"
+          icon: "image"
         },
         {
           name: "Toast",
