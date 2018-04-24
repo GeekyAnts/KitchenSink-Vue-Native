@@ -67,6 +67,8 @@ import FabScreen from "./screens/fab";
 import BasicFabScreen from "./screens/fab/basicFab";
 import MultipleFabIconScreen from "./screens/fab/multipleFabIcon";
 
+import FormScreen from "./screens/form";
+
 import IconsScreen from "./screens/icons";
 import BasicIconScreen from "./screens/icons/basicIon";
 import FamilyIconScreen from "./screens/icons/familyIcon";
@@ -134,6 +136,7 @@ const Drawer = DrawerNavigator(
     NHCheckbox: { screen: CheckboxScreen },
     NHDeckSwiper: { screen: DeckSwiperScreen },
     NHFab: { screen: FabScreen },
+    NHForm: { screen: FormScreen },
     NHIcon: { screen: IconsScreen },
     NHLayout: { screen: LayoutScreen },
     NHList: { screen: ListScreen },
