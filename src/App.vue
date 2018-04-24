@@ -75,7 +75,7 @@ import FloatingLabelInputFormScreen from "./screens/form/floatingLabelInput";
 import IconInputFormScreen from "./screens/form/iconInput";
 import InlineInputFormScreen from "./screens/form/inlineLabelInput";
 import PlaceholderInputFormScreen from "./screens/form/placeholderInput";
-import RegularInputFormScreen from "./screens/form/placeholderInput";
+import RegularInputFormScreen from "./screens/form/regularInput";
 
 import IconsScreen from "./screens/icons";
 import BasicIconScreen from "./screens/icons/basicIon";
