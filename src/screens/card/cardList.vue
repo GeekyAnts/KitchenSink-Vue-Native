@@ -71,7 +71,7 @@
                 
                 <nb-card-item>
                     <nb-left>
-                        <nb-icon name="logo-linkedIn" :style="{color: '#007BB6'}"></nb-icon>
+                        <nb-icon name="logo-linkedin" :style="{color: '#007BB6'}"></nb-icon>
                         <nb-text>
                             LinkedIn
                         </nb-text>
@@ -83,7 +83,7 @@
                 
                 <nb-card-item>
                     <nb-left>
-                        <nb-icon name="logo-youTube" :style="{color: '#D62727'}"></nb-icon>
+                        <nb-icon name="logo-youtube" :style="{color: '#D62727'}"></nb-icon>
                         <nb-text>
                             YouTube
                         </nb-text>

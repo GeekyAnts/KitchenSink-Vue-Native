@@ -18,7 +18,7 @@
         <nb-content padder>
             <nb-card :style="{marginBottom: 15}" transparent>
                 <nb-card-item header button :onPress="handleHeaderClick">
-                    <nb-text>NativeBase.</nb-text>
+                    <nb-text>NativeBase</nb-text>
                 </nb-card-item>
                 
                 <nb-card-item button :onPress="handleBodyClick">
