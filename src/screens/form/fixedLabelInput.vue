@@ -10,18 +10,25 @@
             </nb-button>
           </nb-left>
           <nb-body>
-            <nb-title>Error Input</nb-title>
+            <nb-title>Fixed Label</nb-title>
           </nb-body>
           <nb-right />
         </nb-header>
 
        <nb-content padder>
             <nb-form>
-                <nb-item error>
-                    <nb-input disabled placeholder="Textbox with Error Input" />
-                    <nb-icon-nb name="ios-close-circle" />
+                <nb-item fixedLabel>
+                    <nb-label>Username</nb-label>
+                    <nb-input />
+                </nb-item>
+                <nb-item fixedLabel last>
+                    <nb-label>Password</nb-label>
+                    <nb-input secureTextEntry />
                 </nb-item>
             </nb-form>
+            <nb-button block :style="{ margin: 15, marginTop: 50 }">
+                <nb-text>Sign In</nb-text>
+            </nb-button>
        </nb-content>
       </nb-container>
 </template>
