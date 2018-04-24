@@ -69,6 +69,7 @@ import MultipleFabIconScreen from "./screens/fab/multipleFabIcon";
 
 import FormScreen from "./screens/form";
 import DisabledInputFormScreen from "./screens/form/disabledInput";
+import ErrorInputFormScreen from "./screens/form/errorInput";
 
 import IconsScreen from "./screens/icons";
 import BasicIconScreen from "./screens/icons/basicIon";
@@ -210,6 +211,7 @@ const AppNavigation = StackNavigator(
     MultipleFab: { screen: MultipleFabIconScreen },
 
     DisabledInput: { screen: DisabledInputFormScreen },
+    ErrorInput: { screen: ErrorInputFormScreen },
 
     BasicIcon: { screen: BasicIconScreen },
     IconFamily: { screen: FamilyIconScreen },
