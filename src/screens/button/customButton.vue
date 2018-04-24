@@ -25,18 +25,6 @@
             <nb-button large primary :style="{marginBottom: 20}">
                 <nb-text>Dark Large</nb-text>
             </nb-button>
-            <nb-button block success :style="{marginBottom: 20}">
-                <nb-text>Success</nb-text>
-            </nb-button>
-            <nb-button block warning :style="{marginBottom: 20}">
-                <nb-text>Warning</nb-text>
-            </nb-button>
-            <nb-button block danger :style="{marginBottom: 20}">
-                <nb-text>Danger</nb-text>
-            </nb-button>
-            <nb-button block dark :style="{marginBottom: 20}">
-                <nb-text>Dark</nb-text>
-            </nb-button>
         </nb-content>
 
       </nb-container>

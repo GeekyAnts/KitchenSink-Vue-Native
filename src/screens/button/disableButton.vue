@@ -15,7 +15,7 @@
           <nb-right />
         </nb-header>
 
-        <nb-content padder class="content-wrapper">
+        <nb-content class="content-wrapper">
             <view class="view-wrapper">
                 <nb-button disabled light :style="{marginBottom: 20}">
                     <nb-text>Default</nb-text>

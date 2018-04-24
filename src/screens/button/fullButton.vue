@@ -15,7 +15,7 @@
           <nb-right />
         </nb-header>
 
-        <nb-content padder class="content-wrapper">
+        <nb-content class="content-wrapper">
             <nb-button full light :style="{marginBottom: 20}">
                 <nb-text>Light</nb-text>
             </nb-button>
