@@ -113,6 +113,7 @@ import CustomRowListSwipeScreen from "./screens/listSwipe/customRowListSwiper";
 import PickerScreen from "./screens/picker";
 import BackButtonPickerScreen from "./screens/picker/backButtonPicker";
 import CustomHeaderPickerScreen from "./screens/picker/customHeaderPicker";
+import HeaderPickerScreen from "./screens/picker/headerPicker";
 
 import RadioScreen from "./screens/radio";
 import SearchScreen from "./screens/searchBar";
@@ -266,6 +267,7 @@ const AppNavigation = StackNavigator(
 
     BackButtonPicker: { screen: BackButtonPickerScreen },
     CustomHeaderPicker: { screen: CustomHeaderPickerScreen },
+    HeaderPicker: { screen: HeaderPickerScreen },
 
     BasicSegment: { screen: SegmentHeaderScreen },
     AdvSegment: { screen: SegmentTabScreen },
