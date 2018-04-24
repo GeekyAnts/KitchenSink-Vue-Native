@@ -13,7 +13,7 @@
         </nb-header>
 
         <nb-content padder>
-          <nb-button :onPress="handleBtnPress1">
+          <nb-button :style="stylesObj.mb20" :onPress="handleBtnPress1">
             <nb-text>Top Toast</nb-text>
           </nb-button>
           <nb-button :style="stylesObj.mb20" :onPress="handleBtnPress2">
