@@ -27,9 +27,9 @@
                         :selected="radio1"
                         :onPress="toggleRadio1"
                     />
-                    <text v-if="radio1" :class="[{'text-primary': radio1==true}]">
+                    <!-- <text v-if="radio1" :class="[{'text-primary': radio1==true}]">
                       checked
-                    </text>
+                    </text> -->
                 </nb-right>
             </nb-list-item>
             <nb-list-item
@@ -44,9 +44,9 @@
                     :selected="radio2"
                     :onPress="toggleRadio2"
                 />
-                <text v-if="radio2" :class="[{'text-warning': radio2==true}]">
+                <!-- <text v-if="radio2" :class="[{'text-warning': radio2==true}]">
                     checked
-                </text>
+                </text> -->
                 </nb-right>
             </nb-list-item>
             <nb-list-item
@@ -61,9 +61,9 @@
                       :selected="radio3"
                       :onPress="toggleRadio3"
                   />
-                  <text v-if="radio3" :class="[{'text-success': radio3==true}]">
+                  <!-- <text v-if="radio3" :class="[{'text-success': radio3==true}]">
                     checked
-                  </text>
+                  </text> -->
                 </nb-right>
             </nb-list-item>
             <nb-list-item
@@ -77,14 +77,13 @@
                 <nb-radio
                     :selected="radio4"
                     :onPress="toggleRadio4"
-                    :style="[stylesObj.checkBoxPaddingTop, stylesObj.checkBoxBgColor]"
                 />
                 <!-- <text :class="[{'text-danger': radio4==true}]">
                   Checked
                 </text> -->
-                <text v-if="radio4" :class="[{'text-danger': radio4==true}, 'bg-primary']">
+                <!-- <text v-if="radio4" :class="[{'text-danger': radio4==true}, 'bg-primary']">
                   checked
-                </text>
+                </text> -->
                 </nb-right>
             </nb-list-item>
         </nb-content>
