@@ -116,6 +116,7 @@ import CustomHeaderPickerScreen from "./screens/picker/customHeaderPicker";
 import HeaderPickerScreen from "./screens/picker/headerPicker";
 import HeaderStylePickerScreen from "./screens/picker/headerStylePicker";
 import PickerTextItemTextScreen from "./screens/picker/pickerTextItemText";
+import PickerIconScreen from "./screens/picker/pickerWithIcon";
 
 import RadioScreen from "./screens/radio";
 import SearchScreen from "./screens/searchBar";
@@ -272,6 +273,7 @@ const AppNavigation = StackNavigator(
     HeaderPicker: { screen: HeaderPickerScreen },
     HeaderStylePicker: { screen: HeaderStylePickerScreen },
     PickerTextItemText: { screen: PickerTextItemTextScreen },
+    PickerWithIcon: { screen: PickerIconScreen },
 
     BasicSegment: { screen: SegmentHeaderScreen },
     AdvSegment: { screen: SegmentTabScreen },
