@@ -80,6 +80,7 @@ import RoundedInputFormScreen from "./screens/form/roundedInput";
 import StackedInputFormScreen from "./screens/form/stackedInput";
 import SuccessInputFormScreen from "./screens/form/succesInput";
 import TextAreaInputFormScreen from "./screens/form/textAreaInput";
+import UnderLineInputFormScreen from "./screens/form/underLineInput";
 
 import IconsScreen from "./screens/icons";
 import BasicIconScreen from "./screens/icons/basicIon";
@@ -232,6 +233,7 @@ const AppNavigation = StackNavigator(
     StackedLabel: { screen: StackedInputFormScreen },
     SuccessInput: { screen: SuccessInputFormScreen },
     TextArea: { screen: TextAreaInputFormScreen },
+    UnderlineInput: { screen: UnderLineInputFormScreen },
 
     BasicIcon: { screen: BasicIconScreen },
     IconFamily: { screen: FamilyIconScreen },
