@@ -119,6 +119,8 @@ import ToastPositionScreen from "./screens/toast/toastPosition";
 import ToastTextScreen from "./screens/toast/toastText";
 import ToastTypeScreen from "./screens/toast/toastType";
 
+import TypographyScreen from "./screens/typography";
+
 const Drawer = DrawerNavigator(
   {
     Home: { screen: HomeScreen },
@@ -142,7 +144,8 @@ const Drawer = DrawerNavigator(
     NHSpinner: { screen: SpinnerScreen },
     NHTab: { screen: TabScreen },
     NHThumbnail: { screen: ThumbnailScreen },
-    NHToast: { screen: ToastScreen }
+    NHToast: { screen: ToastScreen },
+    NHTypography: { screen: TypographyScreen }
   },
   {
     initialRouteName: "Home",
