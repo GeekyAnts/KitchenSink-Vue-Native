@@ -75,6 +75,7 @@ import FloatingLabelInputFormScreen from "./screens/form/floatingLabelInput";
 import IconInputFormScreen from "./screens/form/iconInput";
 import InlineInputFormScreen from "./screens/form/inlineLabelInput";
 import PlaceholderInputFormScreen from "./screens/form/placeholderInput";
+import RegularInputFormScreen from "./screens/form/placeholderInput";
 
 import IconsScreen from "./screens/icons";
 import BasicIconScreen from "./screens/icons/basicIon";
@@ -222,6 +223,7 @@ const AppNavigation = StackNavigator(
     IconInput: { screen: IconInputFormScreen },
     InlineLabel: { screen: InlineInputFormScreen },
     PlaceholderLabel: { screen: PlaceholderInputFormScreen },
+    RegularInput: { screen: RegularInputFormScreen },
 
     BasicIcon: { screen: BasicIconScreen },
     IconFamily: { screen: FamilyIconScreen },
