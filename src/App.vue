@@ -111,6 +111,8 @@ import ScrollableTabaScreen from "./screens/tabs/scrollableTab";
 
 import ThumbnailScreen from "./screens/thumbnail";
 
+import ToastScreen from "./screens/toast";
+
 const Drawer = DrawerNavigator(
   {
     Home: { screen: HomeScreen },
@@ -133,7 +135,8 @@ const Drawer = DrawerNavigator(
     Segment: { screen: SegmentScreen },
     NHSpinner: { screen: SpinnerScreen },
     NHTab: { screen: TabScreen },
-    NHThumbnail: { screen: ThumbnailScreen }
+    NHThumbnail: { screen: ThumbnailScreen },
+    NHToast: { screen: ToastScreen }
   },
   {
     initialRouteName: "Home",
