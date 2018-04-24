@@ -10,7 +10,7 @@
             </nb-button>
           </nb-left>
           <nb-body>
-            <nb-title>Simple Deck Swiper</nb-title>
+            <nb-title>Advanced Deck Swiper</nb-title>
           </nb-body>
           <nb-right />
         </nb-header>
