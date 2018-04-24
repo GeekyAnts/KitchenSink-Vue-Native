@@ -110,6 +110,8 @@ import BasicListSwipeScreen from "./screens/listSwipe/basicListSwipe";
 import MultiListSwipeScreen from "./screens/listSwipe/multiListSwiper";
 import CustomRowListSwipeScreen from "./screens/listSwipe/customRowListSwiper";
 
+import PickerScreen from "./screens/picker";
+
 import RadioScreen from "./screens/radio";
 import SearchScreen from "./screens/searchBar";
 
@@ -156,6 +158,7 @@ const Drawer = DrawerNavigator(
     ListSwipe: { screen: ListSwipeScreen },
     NHRadio: { screen: RadioScreen },
     NHSearchbar: { screen: SearchScreen },
+    NHPicker: { screen: PickerScreen },
     Segment: { screen: SegmentScreen },
     NHSpinner: { screen: SpinnerScreen },
     NHTab: { screen: TabScreen },
