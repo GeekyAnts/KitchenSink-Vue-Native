@@ -10,7 +10,7 @@
             </nb-button>
           </nb-left>
           <nb-body>
-            <nb-title>Basic Card</nb-title>
+            <nb-title>Header & Footer Card</nb-title>
           </nb-body>
           <nb-right />
         </nb-header>
