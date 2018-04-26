@@ -7292,9 +7292,9 @@ vue-native-core@0.0.5:
   version "0.0.5"
   resolved "https://registry.yarnpkg.com/vue-native-core/-/vue-native-core-0.0.5.tgz#71ba1b67732d8c9f1ef1dcd32ac52162f1806b00"
 
-vue-native-helper@0.0.6:
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/vue-native-helper/-/vue-native-helper-0.0.6.tgz#a83c30e240871f0e3c7a590e61e44f83d6d7e754"
+vue-native-helper@0.0.8:
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/vue-native-helper/-/vue-native-helper-0.0.8.tgz#d3723e074c04c83d7e4921274d3965873724dcd8"
   dependencies:
     change-case "^3.0.1"
     de-indent "^1.0.2"
@@ -7307,9 +7307,9 @@ vue-native-router@0.0.1-alpha.3:
   dependencies:
     react-navigation "1.5.11"
 
-vue-native-scripts@0.0.7:
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/vue-native-scripts/-/vue-native-scripts-0.0.7.tgz#ae03eb6bdf23ff055f71af205d9571607f970f40"
+vue-native-scripts@0.0.8:
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/vue-native-scripts/-/vue-native-scripts-0.0.8.tgz#8d92501ff6edc943fd951bb25c8f3f6137a677e7"
   dependencies:
     babel-core "^6.25.0"
     cross-spawn "^5.1.0"
@@ -7317,12 +7317,12 @@ vue-native-scripts@0.0.7:
     fs-extra "^3.0.1"
     js-beautify "^1.6.14"
     node-watch "^0.5.4"
-    vue-native-template-compiler "0.0.7"
+    vue-native-template-compiler "0.0.8"
     walk "^2.3.9"
 
-vue-native-template-compiler@0.0.7:
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/vue-native-template-compiler/-/vue-native-template-compiler-0.0.7.tgz#05c2a7be16ff340beaf27f53c9f4270eed6b48c3"
+vue-native-template-compiler@0.0.8:
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/vue-native-template-compiler/-/vue-native-template-compiler-0.0.8.tgz#530f048cd36981cb6228b0cc0dd399b3078843b9"
   dependencies:
     change-case "^3.0.1"
     de-indent "^1.0.2"
