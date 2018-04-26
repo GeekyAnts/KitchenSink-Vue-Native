@@ -99,11 +99,10 @@ export default {
       return <CardComponent item={item} />;
     },
     handleDeckSwiperBackBtn: function() {
-      this._deckSwiper._root.swipeLeft();
+      this.$refs._deckSwiper._root.swipeLeft();
     },
     handleDeckSwiperForwardBtn: function() {
-      console.log("this._deckSwiper", this.$refs._deckSwiper);
-      //   this._deckSwiper._root.swipeRight();
+      this.$refs._deckSwiper._root.swipeRight();
     }
   }
 };
