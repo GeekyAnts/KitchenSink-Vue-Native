@@ -26,7 +26,7 @@
                 <nb-text>2</nb-text>
             </nb-badge>
             <nb-badge info class="mb-10">
-                <nb-text>2</nb-text>
+                <nb-text>5</nb-text>
             </nb-badge>
             <nb-badge warning class="mb-10">
                 <nb-text>2</nb-text>
@@ -56,6 +56,5 @@
 }
 .badge-custom-bg {
   background-color: black;
-  color: white;
 }
 </style>
