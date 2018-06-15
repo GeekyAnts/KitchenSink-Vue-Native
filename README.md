@@ -13,7 +13,7 @@ This project was bootstrapped with [Vue Native Cli](https://github.com/GeekyAnts
 * **Clone and install packages**
 
 ```
-git clone git@github.com:GeekyAnts/KitchenSink-Vue-Native.git
+git clone https://github.com/GeekyAnts/KitchenSink-Vue-Native.git
 cd KitchenSink-Vue-Native
 yarn
 ```
