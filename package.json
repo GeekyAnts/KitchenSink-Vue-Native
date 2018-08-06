@@ -20,12 +20,13 @@
     "preset": "jest-expo"
   },
   "dependencies": {
-    "expo": "^26.0.0",
-    "native-base": "2.6.0",
-    "react": "16.3.0-alpha.1",
-    "react-native": "0.54.0",
-    "vue-native-core": "0.0.5",
-    "vue-native-helper": "0.0.8",
-    "vue-native-router": "0.0.1-alpha.3"
+    "expo": "^27.0.1",
+    "native-base": "^2.7.2",
+    "react": "16.3.1",
+    "react-native": "~0.55.2",
+    "vue-native-core": "0.0.7",
+    "vue-native-helper": "0.0.9",
+    "vue-native-router": "0.0.1-alpha.3",
+    "vue-native-scripts": "0.0.13"
   }
 }
