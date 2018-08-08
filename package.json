@@ -27,6 +27,6 @@
     "vue-native-core": "0.0.7",
     "vue-native-helper": "0.0.9",
     "vue-native-router": "0.0.1-alpha.3",
-    "vue-native-scripts": "0.0.13"
+    "vue-native-scripts": "^0.0.14"
   }
 }
