@@ -19,7 +19,7 @@
             <nb-list-item icon>
                 <nb-left>
                     <nb-button :style="{ backgroundColor: '#FF9501' }">
-                        <nb-icon active name="plane" />
+                        <nb-icon active name="airplane" />
                     </nb-button>
                 </nb-left>
                 <nb-body>

@@ -3,30 +3,28 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "jest-expo": "26.0.0",
-    "react-native-scripts": "1.13.1",
-    "react-test-renderer": "16.3.0-alpha.1",
-    "vue-native-scripts": "0.0.8"
+    "jest-expo": "33.0.2",
+    "react-test-renderer": "16.8.6",
+    "vue-native-scripts": "0.0.16"
   },
-  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
+  "main": "./node_modules/expo/AppEntry.js",
   "scripts": {
-    "start": "react-native-scripts start",
-    "eject": "react-native-scripts eject",
-    "android": "react-native-scripts android",
-    "ios": "react-native-scripts ios",
+    "start": "expo start",
+    "eject": "expo eject",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
     "test": "jest"
   },
   "jest": {
     "preset": "jest-expo"
   },
   "dependencies": {
-    "expo": "^27.0.1",
-    "native-base": "^2.7.2",
-    "react": "16.3.1",
-    "react-native": "~0.55.2",
-    "vue-native-core": "0.0.7",
-    "vue-native-helper": "0.0.9",
-    "vue-native-router": "0.0.1-alpha.3",
-    "vue-native-scripts": "^0.0.14"
+    "expo": "33.0.7",
+    "native-base": "2.12.1",
+    "react": "16.8.6",
+    "react-native": "0.59.10",
+    "vue-native-core": "0.0.8",
+    "vue-native-helper": "0.0.11",
+    "vue-native-router": "0.0.1-alpha.3"
   }
 }

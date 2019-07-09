@@ -6,7 +6,7 @@
               transparent
               :onPress="() => this.props.navigation.navigate('DrawerOpen')"
             >
-              <nb-icon :name="'menu'" />
+              <nb-icon name="menu" />
             </nb-button>
           </nb-left>
           <nb-body>
