@@ -22,7 +22,7 @@
                 <nb-text>person</nb-text>
               </nb-col>
               <nb-col :style="stylesObj.col">
-                <nb-icon ios="ios-apps-outline" android="md-apps" />
+                <nb-icon ios="ios-apps" android="md-apps" />
                 <nb-text>apps</nb-text>
               </nb-col>
               <nb-col :style="stylesObj.col">
@@ -34,7 +34,7 @@
                 <nb-text>paper</nb-text>
               </nb-col>
               <nb-col :style="stylesObj.col">
-                <nb-icon ios="ios-cart-outline" android="md-cart" />
+                <nb-icon ios="ios-cart" android="md-cart" />
                 <nb-text>cart</nb-text>
               </nb-col>
             </nb-row>

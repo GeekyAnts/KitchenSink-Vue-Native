@@ -4,7 +4,7 @@
           <nb-left>
             <nb-button
               transparent
-              :onPress="() => this.props.navigation.navigate('DrawerOpen')"
+              :onPress="() => this.props.navigation.openDrawer()"
             >
               <nb-icon name="menu" />
             </nb-button>

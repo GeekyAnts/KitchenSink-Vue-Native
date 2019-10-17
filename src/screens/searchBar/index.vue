@@ -13,7 +13,7 @@
         <nb-content padder>
            <nb-button
             block
-            :onPress="() => this.props.navigation.navigate('DrawerOpen')"
+            :onPress="() => this.props.navigation.openDrawer()"
           >
             <Text>Back</Text>
           </nb-button>

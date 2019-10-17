@@ -7,7 +7,7 @@
 
 <script>
 import React from "react";
-import { StackNavigator, DrawerNavigator } from "vue-native-router";
+import { createAppContainer, createStackNavigator, createDrawerNavigator } from "vue-native-router";
 import { Root } from "native-base";
 import HomeScreen from "./screens/home/index.vue";
 import SideBarScreen from "./screens/sidebar/index.vue";
@@ -147,7 +147,7 @@ import ToastTypeScreen from "./screens/toast/toastType";
 
 import TypographyScreen from "./screens/typography";
 
-const Drawer = DrawerNavigator(
+const Drawer = createDrawerNavigator(
   {
     Home: { screen: HomeScreen },
     Anatomy: { screen: AnatomyScreen },
@@ -187,7 +187,7 @@ const Drawer = DrawerNavigator(
   }
 );
 
-const AppNavigation = StackNavigator(
+const AppNavigation = createAppContainer(createStackNavigator(
   {
     Drawer: { screen: Drawer },
     RegularActionSheet: { screen: RegularActionSheetScreen },
@@ -299,7 +299,7 @@ const AppNavigation = StackNavigator(
     initialRouteName: "Drawer",
     headerMode: "none"
   }
-);
+));
 export default {
   components: { Root, AppNavigation }
 };

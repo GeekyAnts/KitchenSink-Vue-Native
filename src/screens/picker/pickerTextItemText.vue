@@ -59,7 +59,7 @@ export default {
       this.selected1 = value;
     },
     getIosIcon: function() {
-      return <Icon name="ios-arrow-down-outline" />;
+      return <Icon name="ios-arrow-down" />;
     }
   }
 };

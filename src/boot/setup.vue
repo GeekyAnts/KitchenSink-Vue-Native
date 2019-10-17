@@ -34,7 +34,7 @@ export default {
         await Expo.Font.loadAsync({
           Roboto: require("../../node_modules/native-base/Fonts/Roboto.ttf"),
           Roboto_medium: require("../../node_modules/native-base/Fonts/Roboto_medium.ttf"),
-          Ionicons: require("../../node_modules/@expo/vector-icons/website/src/fonts/Ionicons.ttf")
+          Ionicons: require("../../node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/Ionicons.ttf")
         });
         this.isAppReady = true;
       } catch (error) {
