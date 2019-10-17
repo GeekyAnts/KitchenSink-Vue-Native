@@ -15,7 +15,7 @@ This project was bootstrapped with [Vue Native Cli](https://github.com/GeekyAnts
 ```
 git clone https://github.com/GeekyAnts/KitchenSink-Vue-Native.git
 cd KitchenSink-Vue-Native
-yarn
+npm install
 ```
 
 * **Run on iOS**
