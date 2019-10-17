@@ -1,3 +1,5 @@
+<!-- TODO: Move to react-native-swipe-list-view -->
+
 <template>
     <nb-container :style="{ backgroundColor: '#fff' }">
         <nb-header>

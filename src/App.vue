@@ -105,10 +105,10 @@ import ListSeparatorScreen from "./screens/list/separatorList";
 import ListThumbnailScreen from "./screens/list/thumbnailList";
 import ListItemSelectedScreen from "./screens/list/selectedListItem";
 
-import ListSwipeScreen from "./screens/listSwipe";
-import BasicListSwipeScreen from "./screens/listSwipe/basicListSwipe";
-import MultiListSwipeScreen from "./screens/listSwipe/multiListSwiper";
-import CustomRowListSwipeScreen from "./screens/listSwipe/customRowListSwiper";
+// import ListSwipeScreen from "./screens/listSwipe";
+// import BasicListSwipeScreen from "./screens/listSwipe/basicListSwipe";
+// import MultiListSwipeScreen from "./screens/listSwipe/multiListSwiper";
+// import CustomRowListSwipeScreen from "./screens/listSwipe/customRowListSwiper";
 
 import PickerScreen from "./screens/picker";
 import BackButtonPickerScreen from "./screens/picker/backButtonPicker";
@@ -164,7 +164,7 @@ const Drawer = createDrawerNavigator(
     NHIcon: { screen: IconsScreen },
     NHLayout: { screen: LayoutScreen },
     NHList: { screen: ListScreen },
-    ListSwipe: { screen: ListSwipeScreen },
+    // ListSwipe: { screen: ListSwipeScreen },
     NHRadio: { screen: RadioScreen },
     NHSearchbar: { screen: SearchScreen },
     NHPicker: { screen: PickerScreen },
@@ -267,9 +267,9 @@ const AppNavigation = createAppContainer(createStackNavigator(
     NHListThumbnail: { screen: ListThumbnailScreen },
     NHListItemSelected: { screen: ListItemSelectedScreen },
 
-    BasicListSwipe: { screen: BasicListSwipeScreen },
-    MultiListSwipe: { screen: MultiListSwipeScreen },
-    SwipeRowCustomStyle: { screen: CustomRowListSwipeScreen },
+    // BasicListSwipe: { screen: BasicListSwipeScreen },
+    // MultiListSwipe: { screen: MultiListSwipeScreen },
+    // SwipeRowCustomStyle: { screen: CustomRowListSwipeScreen },
 
     BackButtonPicker: { screen: BackButtonPickerScreen },
     CustomHeaderPicker: { screen: CustomHeaderPickerScreen },
