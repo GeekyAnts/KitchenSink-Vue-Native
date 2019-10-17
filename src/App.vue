@@ -7,7 +7,7 @@
 
 <script>
 import React from "react";
-import { StackNavigator, DrawerNavigator } from "vue-native-router";
+import { createAppContainer, createStackNavigator, createDrawerNavigator } from "vue-native-router";
 import { Root } from "native-base";
 import HomeScreen from "./screens/home/index.vue";
 import SideBarScreen from "./screens/sidebar/index.vue";
@@ -105,10 +105,10 @@ import ListSeparatorScreen from "./screens/list/separatorList";
 import ListThumbnailScreen from "./screens/list/thumbnailList";
 import ListItemSelectedScreen from "./screens/list/selectedListItem";
 
-import ListSwipeScreen from "./screens/listSwipe";
-import BasicListSwipeScreen from "./screens/listSwipe/basicListSwipe";
-import MultiListSwipeScreen from "./screens/listSwipe/multiListSwiper";
-import CustomRowListSwipeScreen from "./screens/listSwipe/customRowListSwiper";
+// import ListSwipeScreen from "./screens/listSwipe";
+// import BasicListSwipeScreen from "./screens/listSwipe/basicListSwipe";
+// import MultiListSwipeScreen from "./screens/listSwipe/multiListSwiper";
+// import CustomRowListSwipeScreen from "./screens/listSwipe/customRowListSwiper";
 
 import PickerScreen from "./screens/picker";
 import BackButtonPickerScreen from "./screens/picker/backButtonPicker";
@@ -147,7 +147,7 @@ import ToastTypeScreen from "./screens/toast/toastType";
 
 import TypographyScreen from "./screens/typography";
 
-const Drawer = DrawerNavigator(
+const Drawer = createDrawerNavigator(
   {
     Home: { screen: HomeScreen },
     Anatomy: { screen: AnatomyScreen },
@@ -164,7 +164,7 @@ const Drawer = DrawerNavigator(
     NHIcon: { screen: IconsScreen },
     NHLayout: { screen: LayoutScreen },
     NHList: { screen: ListScreen },
-    ListSwipe: { screen: ListSwipeScreen },
+    // ListSwipe: { screen: ListSwipeScreen },
     NHRadio: { screen: RadioScreen },
     NHSearchbar: { screen: SearchScreen },
     NHPicker: { screen: PickerScreen },
@@ -187,7 +187,7 @@ const Drawer = DrawerNavigator(
   }
 );
 
-const AppNavigation = StackNavigator(
+const AppNavigation = createAppContainer(createStackNavigator(
   {
     Drawer: { screen: Drawer },
     RegularActionSheet: { screen: RegularActionSheetScreen },
@@ -267,9 +267,9 @@ const AppNavigation = StackNavigator(
     NHListThumbnail: { screen: ListThumbnailScreen },
     NHListItemSelected: { screen: ListItemSelectedScreen },
 
-    BasicListSwipe: { screen: BasicListSwipeScreen },
-    MultiListSwipe: { screen: MultiListSwipeScreen },
-    SwipeRowCustomStyle: { screen: CustomRowListSwipeScreen },
+    // BasicListSwipe: { screen: BasicListSwipeScreen },
+    // MultiListSwipe: { screen: MultiListSwipeScreen },
+    // SwipeRowCustomStyle: { screen: CustomRowListSwipeScreen },
 
     BackButtonPicker: { screen: BackButtonPickerScreen },
     CustomHeaderPicker: { screen: CustomHeaderPickerScreen },
@@ -299,7 +299,7 @@ const AppNavigation = StackNavigator(
     initialRouteName: "Drawer",
     headerMode: "none"
   }
-);
+));
 export default {
   components: { Root, AppNavigation }
 };

@@ -7,7 +7,7 @@
             </nb-button>
           </nb-left>
           <nb-body>
-              Segments
+              <nb-text>Segments</nb-text>
           </nb-body>
           <nb-right>
             <nb-button transparent>

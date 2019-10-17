@@ -19,14 +19,14 @@
             <nb-list-item icon>
                 <nb-left>
                     <nb-button :style="{ backgroundColor: '#FF9501' }">
-                        <nb-icon active name="plane" />
+                        <nb-icon active name="airplane" />
                     </nb-button>
                 </nb-left>
                 <nb-body>
                     <nb-text>Airplane Mode</nb-Text>
                 </nb-body>
                 <nb-right>
-                    <nb-switch :value="false" onTintColor="#50B948" />
+                    <nb-switch :value="airplaneMode" :onChange="toggleAirplaneMode" :trackColor="{ true: '#50B948' }" />
                 </nb-right>
             </nb-list-item>
             <nb-list-item icon>
@@ -192,7 +192,8 @@ export default {
   data: function() {
     return {
       osType: Platform.OS,
-      selected1: "key1"
+      selected1: "key1",
+      airplaneMode: false,
     };
   },
   methods: {
@@ -200,8 +201,11 @@ export default {
       this.selected1 = value;
     },
     getIosIconForPicker: function() {
-      return <Icon name="ios-arrow-down-outline" />;
-    }
+      return <Icon name="ios-arrow-down" />;
+    },
+    toggleAirplaneMode() {
+      this.airplaneMode = !this.airplaneMode;
+    },
   }
 };
 </script>

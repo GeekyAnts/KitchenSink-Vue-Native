@@ -156,13 +156,13 @@ export default {
           bg: "#5DCEE2",
           types: "8"
         },
-        {
-          name: "ListSwipe",
-          route: "ListSwipe",
-          icon: "swap",
-          bg: "#C5F442",
-          types: "3"
-        },
+        // {
+        //   name: "ListSwipe",
+        //   route: "ListSwipe",
+        //   icon: "swap",
+        //   bg: "#C5F442",
+        //   types: "3"
+        // },
         {
           name: "Picker",
           route: "NHPicker",

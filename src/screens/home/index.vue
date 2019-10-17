@@ -3,7 +3,7 @@
     <status-bar :barStyle="'light-content'"></status-bar>
     <image-background :source="launchScreenBg" class="imageContainer">
       <view class="logoContainer" :style="stylesObj.logoContainerStyle">
-        <image-background :source="launchscreenLogo" class="logo" :style="stylesObj.logoStyle">
+        <image-background :source="launchscreenLogo" class="logo" :style="stylesObj.logoStyle" />
       </view>
       <view class="text-container">
         <nb-h3 :style="{marginBottom: 8}" class="text-color-white">App To ShowCase</nb-h3>
@@ -15,7 +15,6 @@
         </nb-button>
       </view>
     </image-background>
-    
   </nb-container>
 </template>
 
@@ -51,7 +50,7 @@ export default {
   },
   methods: {
     handleLetGoBtnPress: function() {
-      this.navigation.navigate("DrawerOpen");
+      this.navigation.openDrawer();
     }
   }
 };

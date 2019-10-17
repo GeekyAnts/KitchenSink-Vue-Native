@@ -131,7 +131,7 @@
                 />
                 <nb-icon
                 active
-                name="game-controller-a"
+                name="logo-game-controller-a"
                 :style="{ width: 45, height: 45, justifyContent: 'center' }"
                 />
                 <nb-icon
@@ -171,7 +171,7 @@
                 :style="{ width: 45, height: 45, justifyContent: 'center' }"
                 />
                 <nb-icon
-                name="ionic"
+                name="logo-ionic"
                 :style="{ width: 45, height: 45, justifyContent: 'center' }"
                 />
                 <nb-icon
