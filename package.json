@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "expo": "33.0.7",
-    "native-base": "2.12.1",
+    "native-base": "^2.13.8",
     "react": "16.8.6",
     "react-native": "0.59.10",
     "vue-native-core": "0.0.8",
