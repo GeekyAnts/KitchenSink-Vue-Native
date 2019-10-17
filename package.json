@@ -1,6 +1,6 @@
 {
   "name": "kitchenSink-vue-native",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "devDependencies": {
     "jest-expo": "^35.0.0",
