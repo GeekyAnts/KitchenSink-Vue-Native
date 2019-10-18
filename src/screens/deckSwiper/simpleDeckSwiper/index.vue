@@ -1,28 +1,25 @@
 <template>
   <nb-container :style="{ backgroundColor: '#fff' }">
-        <nb-header>
-          <nb-left>
-            <nb-button
-              transparent
-              :onPress="() => this.props.navigation.goBack()"
-            >
-              <nb-icon name="arrow-back" />
-            </nb-button>
-          </nb-left>
-          <nb-body>
-            <nb-title>Simple Deck Swiper</nb-title>
-          </nb-body>
-          <nb-right />
-        </nb-header>
-        <view :style="{flex: 1, padding: 12}">
-            <nb-deck-swiper
-                :dataSource="cardItemsArr"
-                :looping="isLoopingRequired"
-                :renderEmpty="handleCardEmpty"
-                :renderItem="handleCardRendering"
-            >
-            </nb-deck-swiper>
-        </view>
+    <nb-header>
+      <nb-left>
+        <nb-button transparent :onPress="() => this.props.navigation.goBack()">
+          <nb-icon name="arrow-back" />
+        </nb-button>
+      </nb-left>
+      <nb-body>
+        <nb-title>Simple Deck Swiper</nb-title>
+      </nb-body>
+      <nb-right />
+    </nb-header>
+    <view :style="{ flex: 1, padding: 12 }">
+      <nb-deck-swiper
+        :dataSource="cardItemsArr"
+        :looping="isLoopingRequired"
+        :renderEmpty="handleCardEmpty"
+        :renderItem="handleCardRendering"
+      >
+      </nb-deck-swiper>
+    </view>
   </nb-container>
 </template>
 
@@ -37,7 +34,7 @@ import cardFour from "../../../../assets/swiper-4.png";
 import CardComponent from "../common/card";
 
 export default {
-  data: function() {
+  data() {
     return {
       cardItemsArr: [
         {
@@ -65,14 +62,14 @@ export default {
     };
   },
   methods: {
-    handleCardEmpty: function() {
+    handleCardEmpty() {
       return (
         <View>
           <Text>Over </Text>
         </View>
       );
     },
-    handleCardRendering: function(item) {
+    handleCardRendering(item) {
       return <CardComponent item={item} />;
     }
   }

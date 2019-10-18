@@ -5,12 +5,11 @@
   </view>
 </template>
 
-
 <script>
 import Vue from "vue-native-core";
-import { StackNavigator } from "vue-native-router";
 import { VueNativeBase } from "native-base";
 import { AppLoading } from "expo";
+import * as Font from "expo-font";
 
 import App from "../App.vue";
 
@@ -19,19 +18,19 @@ Vue.use(VueNativeBase);
 
 export default {
   components: { App, AppLoading },
-  data: function() {
+  data() {
     return {
       isAppReady: false
     };
   },
-  created: function() {
+  created() {
     this.loadFonts();
   },
   methods: {
-    loadFonts: async function() {
+    async loadFonts() {
       try {
         this.isAppReady = false;
-        await Expo.Font.loadAsync({
+        await Font.loadAsync({
           Roboto: require("../../node_modules/native-base/Fonts/Roboto.ttf"),
           Roboto_medium: require("../../node_modules/native-base/Fonts/Roboto_medium.ttf"),
           Ionicons: require("../../node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/Ionicons.ttf")
@@ -51,4 +50,3 @@ export default {
   flex: 1;
 }
 </style>
-

@@ -1,47 +1,40 @@
 <template>
   <nb-container :style="{ backgroundColor: '#fff' }">
-        <nb-header>
+    <nb-header>
+      <nb-left>
+        <nb-button transparent :onPress="() => this.props.navigation.goBack()">
+          <nb-icon name="arrow-back" />
+        </nb-button>
+      </nb-left>
+      <nb-body>
+        <nb-title>List Thumbnail</nb-title>
+      </nb-body>
+      <nb-right />
+    </nb-header>
+    <nb-content padder>
+      <nb-list>
+        <nb-list-item v-for="listItem in listItemArr" :key="listItem.text">
           <nb-left>
-            <nb-button
-              transparent
-              :onPress="() => this.props.navigation.goBack()"
-            >
-              <nb-icon name="arrow-back" />
-            </nb-button>
+            <nb-thumbnail square :size="55" :source="listItem.img" />
           </nb-left>
           <nb-body>
-            <nb-title>List Thumbnail</nb-title>
+            <nb-text>
+              {{ listItem.text }}
+            </nb-text>
+            <nb-text :numberOfLines="1" note>
+              {{ listItem.note }}
+            </nb-text>
           </nb-body>
-          <nb-right />
-        </nb-header>
-        <nb-content padder>
-            <nb-list>
-                <nb-list-item
-                    v-for="listItem in listItemArr"
-                    :key="listItem.text"
-                >
-                    <nb-left>
-                        <nb-thumbnail square :size="55" :source="listItem.img" />
-                    </nb-left>
-                    <nb-body>
-                        <nb-text>
-                            {{listItem.text}}
-                        </nb-text>
-                        <nb-text :numberOfLines="1" note>
-                            {{listItem.note}}
-                        </nb-text>
-                    </nb-body>
-                    <nb-right>
-                        <nb-button transparent>
-                            <nb-text>View</nb-text>
-                        </nb-button>
-                    </nb-right>
-            </nb-list-item>
-            </nb-list>
-        </nb-content>
-      </nb-container>
+          <nb-right>
+            <nb-button transparent>
+              <nb-text>View</nb-text>
+            </nb-button>
+          </nb-right>
+        </nb-list-item>
+      </nb-list>
+    </nb-content>
+  </nb-container>
 </template>
-
 
 <script>
 import sankhadeep from "../../../assets/contacts/sankhadeep.png";
@@ -52,7 +45,7 @@ import shruti from "../../../assets/contacts/shruti.png";
 import shivraj from "../../../assets/contacts/shivraj.jpg";
 
 export default {
-  data: function() {
+  data() {
     return {
       listItemArr: [
         {
@@ -90,7 +83,6 @@ export default {
   }
 };
 </script>
-
 
 <style>
 .body-icon-color {

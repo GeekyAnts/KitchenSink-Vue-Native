@@ -1,42 +1,38 @@
 <template>
-    <nb-container :style="{ backgroundColor: '#fff' }">
-        <nb-header>
+  <nb-container :style="{ backgroundColor: '#fff' }">
+    <nb-header>
+      <nb-left>
+        <nb-button transparent :onPress="() => this.props.navigation.goBack()">
+          <nb-icon name="arrow-back" />
+        </nb-button>
+      </nb-left>
+      <nb-body>
+        <nb-title>List Avatar</nb-title>
+      </nb-body>
+      <nb-right />
+    </nb-header>
+    <nb-content padder>
+      <nb-list>
+        <nb-list-item v-for="item in listItemArr" :key="item.text">
           <nb-left>
-            <nb-button
-              transparent
-              :onPress="() => this.props.navigation.goBack()"
-            >
-              <nb-icon name="arrow-back" />
-            </nb-button>
+            <nb-thumbnail small :source="item.img" />
           </nb-left>
           <nb-body>
-            <nb-title>List Avatar</nb-title>
+            <nb-text>
+              {{ item.text }}
+            </nb-text>
+            <nb-text :numberOfLines="1">
+              {{ item.note }}
+            </nb-text>
           </nb-body>
-          <nb-right />
-        </nb-header>
-        <nb-content padder>
-            <nb-list>
-                <nb-list-item v-for="item in listItemArr" :key="item.text">
-                    <nb-left>
-                        <nb-thumbnail small :source="item.img" />
-                    </nb-left>
-                    <nb-body>
-                        <nb-text>
-                            {{item.text}}
-                        </nb-text>
-                        <nb-text :numberOfLines="1">
-                            {{item.note}}
-                        </nb-text>
-                    </nb-body>
-                    <nb-right>
-                        <nb-text note> {{item.time}} </nb-text>
-                    </nb-right>
-                </nb-list-item>
-            </nb-list>
-        </nb-content>
-    </nb-container>
+          <nb-right>
+            <nb-text note> {{ item.time }} </nb-text>
+          </nb-right>
+        </nb-list-item>
+      </nb-list>
+    </nb-content>
+  </nb-container>
 </template>
-
 
 <script>
 import pratik from "../../../assets/contacts/pratik.png";
@@ -46,7 +42,7 @@ import atul from "../../../assets/contacts/atul.png";
 import saurabh from "../../../assets/contacts/saurabh.png";
 import varun from "../../../assets/contacts/varun.png";
 export default {
-  data: function() {
+  data() {
     return {
       listItemArr: [
         {
