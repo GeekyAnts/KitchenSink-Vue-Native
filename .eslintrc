@@ -1,0 +1,27 @@
+{
+  "root": true,
+  "env": {
+    "node": true
+  },
+  "parserOptions": {
+    "parser": "babel-eslint"
+  },
+  "extends": [
+    "plugin:vue/essential",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "eslint:recommended"
+  ],
+  "rules": {
+    "object-shorthand": ["error", "always"],
+    "vue/v-bind-style": ["error", "shorthand"],
+    "vue/v-on-style": ["error", "shorthand"],
+    "vue/component-name-in-template-casing": ["error", "kebab-case"],
+    "vue/prop-name-casing": ["error", "camelCase"]
+  },
+  "settings": {
+    "react": {
+      "version": "16.8.3"
+    }
+  }
+}

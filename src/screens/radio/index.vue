@@ -1,99 +1,74 @@
 <template>
   <nb-container :style="{ backgroundColor: '#fff' }">
-        <nb-header>
-          <nb-left>
-            <nb-button
-              transparent
-              :onPress="() => this.props.navigation.openDrawer()"
-            >
-              <nb-icon name="menu" />
-            </nb-button>
-          </nb-left>
-          <nb-body>
-            <nb-title>Radio</nb-title>
-          </nb-body>
-          <nb-right />
-        </nb-header>
-        <nb-content padder>
-            <nb-list-item
-                :selected="radio1"
-                :onPress="toggleRadio1"
-            >
-                <nb-left>
-                    <nb-text>Lunch Break</nb-text>
-                </nb-left>
-                <nb-right>
-                    <nb-radio
-                        :selected="radio1"
-                        :onPress="toggleRadio1"
-                    />
-                    <!-- <text v-if="radio1" :class="[{'text-primary': radio1==true}]">
+    <nb-header>
+      <nb-left>
+        <nb-button
+          transparent
+          :onPress="() => this.props.navigation.openDrawer()"
+        >
+          <nb-icon name="menu" />
+        </nb-button>
+      </nb-left>
+      <nb-body>
+        <nb-title>Radio</nb-title>
+      </nb-body>
+      <nb-right />
+    </nb-header>
+    <nb-content padder>
+      <nb-list-item :selected="radio1" :onPress="toggleRadio1">
+        <nb-left>
+          <nb-text>Lunch Break</nb-text>
+        </nb-left>
+        <nb-right>
+          <nb-radio :selected="radio1" :onPress="toggleRadio1" />
+          <!-- <text v-if="radio1" :class="[{'text-primary': radio1==true}]">
                       checked
                     </text> -->
-                </nb-right>
-            </nb-list-item>
-            <nb-list-item
-                :selected="radio2"
-                :onPress="toggleRadio2"
-            >
-                <nb-left>
-                <nb-text>Daily Stand Up</nb-text>
-                </nb-left>
-                <nb-right>
-                <nb-radio
-                    :selected="radio2"
-                    :onPress="toggleRadio2"
-                />
-                <!-- <text v-if="radio2" :class="[{'text-warning': radio2==true}]">
+        </nb-right>
+      </nb-list-item>
+      <nb-list-item :selected="radio2" :onPress="toggleRadio2">
+        <nb-left>
+          <nb-text>Daily Stand Up</nb-text>
+        </nb-left>
+        <nb-right>
+          <nb-radio :selected="radio2" :onPress="toggleRadio2" />
+          <!-- <text v-if="radio2" :class="[{'text-warning': radio2==true}]">
                     checked
                 </text> -->
-                </nb-right>
-            </nb-list-item>
-            <nb-list-item
-                :selected="radio3"
-                :onPress="toggleRadio3"
-            >
-                <nb-left>
-                  <nb-text>Finish List Screen</nb-text>
-                </nb-left>
-                <nb-right>
-                  <nb-radio
-                      :selected="radio3"
-                      :onPress="toggleRadio3"
-                  />
-                  <!-- <text v-if="radio3" :class="[{'text-success': radio3==true}]">
+        </nb-right>
+      </nb-list-item>
+      <nb-list-item :selected="radio3" :onPress="toggleRadio3">
+        <nb-left>
+          <nb-text>Finish List Screen</nb-text>
+        </nb-left>
+        <nb-right>
+          <nb-radio :selected="radio3" :onPress="toggleRadio3" />
+          <!-- <text v-if="radio3" :class="[{'text-success': radio3==true}]">
                     checked
                   </text> -->
-                </nb-right>
-            </nb-list-item>
-            <nb-list-item
-                :selected="radio4"
-                :onPress="toggleRadio4"
-            >
-                <nb-left>
-                <nb-text>Discussion with Client</nb-text>
-                </nb-left>
-                <nb-right>
-                <nb-radio
-                    :selected="radio4"
-                    :onPress="toggleRadio4"
-                />
-                <!-- <text :class="[{'text-danger': radio4==true}]">
+        </nb-right>
+      </nb-list-item>
+      <nb-list-item :selected="radio4" :onPress="toggleRadio4">
+        <nb-left>
+          <nb-text>Discussion with Client</nb-text>
+        </nb-left>
+        <nb-right>
+          <nb-radio :selected="radio4" :onPress="toggleRadio4" />
+          <!-- <text :class="[{'text-danger': radio4==true}]">
                   Checked
                 </text> -->
-                <!-- <text v-if="radio4" :class="[{'text-danger': radio4==true}, 'bg-primary']">
+          <!-- <text v-if="radio4" :class="[{'text-danger': radio4==true}, 'bg-primary']">
                   checked
                 </text> -->
-                </nb-right>
-            </nb-list-item>
-        </nb-content>
-      </nb-container>
+        </nb-right>
+      </nb-list-item>
+    </nb-content>
+  </nb-container>
 </template>
-
 
 <script>
 export default {
-  data: function() {
+  data() {
     return {
       radio1: false,
       radio2: false,
@@ -112,37 +87,33 @@ export default {
     };
   },
   methods: {
-    toggleRadio1: function() {
+    toggleRadio1() {
       this.radio1 = true;
       this.radio2 = false;
       this.radio3 = false;
       this.radio4 = false;
     },
-    toggleRadio2: function() {
+    toggleRadio2() {
       this.radio1 = false;
       this.radio2 = true;
       this.radio3 = false;
       this.radio4 = false;
     },
-    toggleRadio3: function() {
+    toggleRadio3() {
       this.radio1 = false;
       this.radio2 = false;
       this.radio3 = true;
       this.radio4 = false;
     },
-    toggleRadio4: function() {
+    toggleRadio4() {
       this.radio1 = false;
       this.radio2 = false;
       this.radio3 = false;
       this.radio4 = true;
     }
-  },
-  updated() {
-    console.log("yes update lifecycle methods is called");
   }
 };
 </script>
-
 
 <style>
 .body-icon-color {

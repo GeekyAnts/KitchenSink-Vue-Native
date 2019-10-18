@@ -50,7 +50,7 @@ export default (variables = variable) => {
         flex: 1,
         width: Platform.OS === "ios" ? null : variables.deviceWidth - 25,
         fontSize: variables.inputFontSize,
-        lineHeight: variables.inputLineHeight - 6,
+        lineHeight: variables.inputLineHeight - 6
       },
       flexDirection: null,
       height: variables.inputHeightBase + 15

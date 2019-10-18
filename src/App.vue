@@ -1,13 +1,15 @@
- <template>
-    <root>
-      <app-navigation></app-navigation>
-    </root>
+<template>
+  <root>
+    <app-navigation></app-navigation>
+  </root>
 </template>
 
-
 <script>
-import React from "react";
-import { createAppContainer, createStackNavigator, createDrawerNavigator } from "vue-native-router";
+import {
+  createAppContainer,
+  createStackNavigator,
+  createDrawerNavigator
+} from "vue-native-router";
 import { Root } from "native-base";
 import HomeScreen from "./screens/home/index.vue";
 import SideBarScreen from "./screens/sidebar/index.vue";
@@ -180,128 +182,126 @@ const Drawer = createDrawerNavigator(
     contentOptions: {
       activeTintColor: "#e91e63"
     },
-    contentComponent: props => {
-      // console.log("props inside contentComponent", props);
-      return <SideBarScreen {...props} />;
-    }
+    contentComponent: SideBarScreen
   }
 );
 
-const AppNavigation = createAppContainer(createStackNavigator(
-  {
-    Drawer: { screen: Drawer },
-    RegularActionSheet: { screen: RegularActionSheetScreen },
-    IconActionSheet: { screen: IconActionSheetScreen },
-    Header1: { screen: Header1Screen },
-    Header2: { screen: Header2Screen },
-    Header3: { screen: Header3Screen },
-    Header4: { screen: Header4Screen },
-    Header5: { screen: Header5Screen },
-    Header6: { screen: Header6Screen },
-    Header7: { screen: Header7Screen },
-    Header8: { screen: Header8Screen },
-    HeaderNoShadow: { screen: HeaderNoShadowScreen },
-    HeaderSpan: { screen: HeaderSpanScreen },
+const AppNavigation = createAppContainer(
+  createStackNavigator(
+    {
+      Drawer: { screen: Drawer },
+      RegularActionSheet: { screen: RegularActionSheetScreen },
+      IconActionSheet: { screen: IconActionSheetScreen },
+      Header1: { screen: Header1Screen },
+      Header2: { screen: Header2Screen },
+      Header3: { screen: Header3Screen },
+      Header4: { screen: Header4Screen },
+      Header5: { screen: Header5Screen },
+      Header6: { screen: Header6Screen },
+      Header7: { screen: Header7Screen },
+      Header8: { screen: Header8Screen },
+      HeaderNoShadow: { screen: HeaderNoShadowScreen },
+      HeaderSpan: { screen: HeaderSpanScreen },
 
-    BadgeFooter: { screen: BadgeFooterScreen },
-    BasicFooter: { screen: BasicFooterScreen },
-    IconFooter: { screen: IconFooterScreen },
-    IconText: { screen: IconTextFooterScreen },
+      BadgeFooter: { screen: BadgeFooterScreen },
+      BasicFooter: { screen: BasicFooterScreen },
+      IconFooter: { screen: IconFooterScreen },
+      IconText: { screen: IconTextFooterScreen },
 
-    Block: { screen: BlockButtonScreen },
-    Custom: { screen: CustomButtonScreen },
-    Default: { screen: DefaultButtonScreen },
-    Disabled: { screen: DisabledButtonScreen },
-    Full: { screen: FullButtonScreen },
-    IconBtn: { screen: IconButtonScreen },
-    Outline: { screen: OutlineButtonScreen },
-    Rounded: { screen: RoundedButtonScreen },
-    Transparent: { screen: TransparentButtonScreen },
+      Block: { screen: BlockButtonScreen },
+      Custom: { screen: CustomButtonScreen },
+      Default: { screen: DefaultButtonScreen },
+      Disabled: { screen: DisabledButtonScreen },
+      Full: { screen: FullButtonScreen },
+      IconBtn: { screen: IconButtonScreen },
+      Outline: { screen: OutlineButtonScreen },
+      Rounded: { screen: RoundedButtonScreen },
+      Transparent: { screen: TransparentButtonScreen },
 
-    BasicCard: { screen: BasicCardScreen },
-    NHCardHeaderAndFooter: { screen: CardHeaderAndFooterScreen },
-    NHCardImage: { screen: CardImageScreen },
-    NHCardList: { screen: CardListScreen },
-    NHCardShowcase: { screen: CardShowcaseScreen },
-    NHCardTransparent: { screen: CardTransparentScreen },
-    NHCardItemBordered: { screen: CardBorderedScreen },
-    NHCardItemButton: { screen: CardItemButtonScreen },
+      BasicCard: { screen: BasicCardScreen },
+      NHCardHeaderAndFooter: { screen: CardHeaderAndFooterScreen },
+      NHCardImage: { screen: CardImageScreen },
+      NHCardList: { screen: CardListScreen },
+      NHCardShowcase: { screen: CardShowcaseScreen },
+      NHCardTransparent: { screen: CardTransparentScreen },
+      NHCardItemBordered: { screen: CardBorderedScreen },
+      NHCardItemButton: { screen: CardItemButtonScreen },
 
-    SimpleDeck: { screen: SimpleDeckSwiperScreen },
-    AdvancedDeck: { screen: AdvanceDeckSwiperScreen },
+      SimpleDeck: { screen: SimpleDeckSwiperScreen },
+      AdvancedDeck: { screen: AdvanceDeckSwiperScreen },
 
-    BasicFab: { screen: BasicFabScreen },
-    MultipleFab: { screen: MultipleFabIconScreen },
+      BasicFab: { screen: BasicFabScreen },
+      MultipleFab: { screen: MultipleFabIconScreen },
 
-    DisabledInput: { screen: DisabledInputFormScreen },
-    ErrorInput: { screen: ErrorInputFormScreen },
-    FixedLabel: { screen: FixedLabelInputFormScreen },
-    FloatingLabel: { screen: FloatingLabelInputFormScreen },
-    IconInput: { screen: IconInputFormScreen },
-    InlineLabel: { screen: InlineInputFormScreen },
-    PlaceholderLabel: { screen: PlaceholderInputFormScreen },
-    RegularInput: { screen: RegularInputFormScreen },
-    RoundedInput: { screen: RoundedInputFormScreen },
-    StackedLabel: { screen: StackedInputFormScreen },
-    SuccessInput: { screen: SuccessInputFormScreen },
-    TextArea: { screen: TextAreaInputFormScreen },
-    UnderlineInput: { screen: UnderLineInputFormScreen },
+      DisabledInput: { screen: DisabledInputFormScreen },
+      ErrorInput: { screen: ErrorInputFormScreen },
+      FixedLabel: { screen: FixedLabelInputFormScreen },
+      FloatingLabel: { screen: FloatingLabelInputFormScreen },
+      IconInput: { screen: IconInputFormScreen },
+      InlineLabel: { screen: InlineInputFormScreen },
+      PlaceholderLabel: { screen: PlaceholderInputFormScreen },
+      RegularInput: { screen: RegularInputFormScreen },
+      RoundedInput: { screen: RoundedInputFormScreen },
+      StackedLabel: { screen: StackedInputFormScreen },
+      SuccessInput: { screen: SuccessInputFormScreen },
+      TextArea: { screen: TextAreaInputFormScreen },
+      UnderlineInput: { screen: UnderLineInputFormScreen },
 
-    BasicIcon: { screen: BasicIconScreen },
-    IconFamily: { screen: FamilyIconScreen },
-    Icons: { screen: SimpleIconsScreen },
-    PlatformSpecificIcon: { screen: PlatformSpecificIconScreen },
+      BasicIcon: { screen: BasicIconScreen },
+      IconFamily: { screen: FamilyIconScreen },
+      Icons: { screen: SimpleIconsScreen },
+      PlatformSpecificIcon: { screen: PlatformSpecificIconScreen },
 
-    ColumnNB: { screen: ColumnLayoutScreen },
-    CustomCol: { screen: CustomColumnLayoutScreen },
-    RowNB: { screen: RowLayoutScreen },
-    CustomRow: { screen: CustomRowLayoutScreen },
-    NestedGrid: { screen: NestedLayoutScreen },
+      ColumnNB: { screen: ColumnLayoutScreen },
+      CustomCol: { screen: CustomColumnLayoutScreen },
+      RowNB: { screen: RowLayoutScreen },
+      CustomRow: { screen: CustomRowLayoutScreen },
+      NestedGrid: { screen: NestedLayoutScreen },
 
-    NHBasicList: { screen: BasicListScreen },
-    NHListAvatar: { screen: ListAvatarScreen },
-    NHListDivider: { screen: ListDividerScreen },
-    NHListHeader: { screen: ListHeaderScreen },
-    NHListIcon: { screen: ListIconScreen },
-    NHListSeparator: { screen: ListSeparatorScreen },
-    NHListThumbnail: { screen: ListThumbnailScreen },
-    NHListItemSelected: { screen: ListItemSelectedScreen },
+      NHBasicList: { screen: BasicListScreen },
+      NHListAvatar: { screen: ListAvatarScreen },
+      NHListDivider: { screen: ListDividerScreen },
+      NHListHeader: { screen: ListHeaderScreen },
+      NHListIcon: { screen: ListIconScreen },
+      NHListSeparator: { screen: ListSeparatorScreen },
+      NHListThumbnail: { screen: ListThumbnailScreen },
+      NHListItemSelected: { screen: ListItemSelectedScreen },
 
-    // BasicListSwipe: { screen: BasicListSwipeScreen },
-    // MultiListSwipe: { screen: MultiListSwipeScreen },
-    // SwipeRowCustomStyle: { screen: CustomRowListSwipeScreen },
+      // BasicListSwipe: { screen: BasicListSwipeScreen },
+      // MultiListSwipe: { screen: MultiListSwipeScreen },
+      // SwipeRowCustomStyle: { screen: CustomRowListSwipeScreen },
 
-    BackButtonPicker: { screen: BackButtonPickerScreen },
-    CustomHeaderPicker: { screen: CustomHeaderPickerScreen },
-    HeaderPicker: { screen: HeaderPickerScreen },
-    HeaderStylePicker: { screen: HeaderStylePickerScreen },
-    PickerTextItemText: { screen: PickerTextItemTextScreen },
-    PickerWithIcon: { screen: PickerIconScreen },
-    PlaceholderPicker: { screen: PickerWithPlaceHolderScreen },
-    PlaceholderPickerNote: { screen: PickerWithPlaceHolderNoteScreen },
-    RegularPicker: { screen: RegularPickerScreen },
+      BackButtonPicker: { screen: BackButtonPickerScreen },
+      CustomHeaderPicker: { screen: CustomHeaderPickerScreen },
+      HeaderPicker: { screen: HeaderPickerScreen },
+      HeaderStylePicker: { screen: HeaderStylePickerScreen },
+      PickerTextItemText: { screen: PickerTextItemTextScreen },
+      PickerWithIcon: { screen: PickerIconScreen },
+      PlaceholderPicker: { screen: PickerWithPlaceHolderScreen },
+      PlaceholderPickerNote: { screen: PickerWithPlaceHolderNoteScreen },
+      RegularPicker: { screen: RegularPickerScreen },
 
-    BasicSegment: { screen: SegmentHeaderScreen },
-    AdvSegment: { screen: SegmentTabScreen },
+      BasicSegment: { screen: SegmentHeaderScreen },
+      AdvSegment: { screen: SegmentTabScreen },
 
-    BasicTab: { screen: BasicTabScreen },
-    ConfigTab: { screen: AdvanceTabScreen },
-    ScrollableTab: { screen: ScrollableTabaScreen },
+      BasicTab: { screen: BasicTabScreen },
+      ConfigTab: { screen: AdvanceTabScreen },
+      ScrollableTab: { screen: ScrollableTabaScreen },
 
-    BasicToast: { screen: BasicToastScreen },
-    ToastButton: { screen: ToastButtonStyleScreen },
-    ToastDuration: { screen: ToastDurationScreen },
-    ToastPosition: { screen: ToastPositionScreen },
-    ToastText: { screen: ToastTextScreen },
-    ToastType: { screen: ToastTypeScreen }
-  },
-  {
-    initialRouteName: "Drawer",
-    headerMode: "none"
-  }
-));
+      BasicToast: { screen: BasicToastScreen },
+      ToastButton: { screen: ToastButtonStyleScreen },
+      ToastDuration: { screen: ToastDurationScreen },
+      ToastPosition: { screen: ToastPositionScreen },
+      ToastText: { screen: ToastTextScreen },
+      ToastType: { screen: ToastTypeScreen }
+    },
+    {
+      initialRouteName: "Drawer",
+      headerMode: "none"
+    }
+  )
+);
 export default {
   components: { Root, AppNavigation }
 };
-</script> 
-
+</script>

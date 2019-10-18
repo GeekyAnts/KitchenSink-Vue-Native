@@ -1,40 +1,39 @@
 <template>
-    <nb-container>
-        <nb-header hasTabs>
-          <nb-left>
-            <nb-button transparent :onPress="() => this.props.navigation.goBack()">
-              <nb-icon name="arrow-back" />
-            </nb-button>
-          </nb-left>
-          <nb-body>
-            <nb-title>Toast Type</nb-title>
-          </nb-body>
-          <nb-right />
-        </nb-header>
+  <nb-container>
+    <nb-header hasTabs>
+      <nb-left>
+        <nb-button transparent :onPress="() => this.props.navigation.goBack()">
+          <nb-icon name="arrow-back" />
+        </nb-button>
+      </nb-left>
+      <nb-body>
+        <nb-title>Toast Type</nb-title>
+      </nb-body>
+      <nb-right />
+    </nb-header>
 
-        <nb-content padder>
-          <nb-button :style="stylesObj.mb15" :onPress="handleBtnPress1">
-            <nb-text>Default Toast</nb-text>
-          </nb-button>
-          <nb-button :style="stylesObj.mb15" :onPress="handleBtnPress2">
-            <nb-text>Success Toast</nb-text>
-          </nb-button>
-          <nb-button :style="stylesObj.mb15" :onPress="handleBtnPress3">
-            <nb-text>Warning Toast</nb-text>
-          </nb-button>
-          <nb-button :style="stylesObj.mb15" :onPress="handleBtnPress4">
-            <nb-text>Danger Toast</nb-text>
-          </nb-button>
-        </nb-content>
-    </nb-container>
+    <nb-content padder>
+      <nb-button :style="stylesObj.mb15" :onPress="handleBtnPress1">
+        <nb-text>Default Toast</nb-text>
+      </nb-button>
+      <nb-button :style="stylesObj.mb15" :onPress="handleBtnPress2">
+        <nb-text>Success Toast</nb-text>
+      </nb-button>
+      <nb-button :style="stylesObj.mb15" :onPress="handleBtnPress3">
+        <nb-text>Warning Toast</nb-text>
+      </nb-button>
+      <nb-button :style="stylesObj.mb15" :onPress="handleBtnPress4">
+        <nb-text>Danger Toast</nb-text>
+      </nb-button>
+    </nb-content>
+  </nb-container>
 </template>
 
 <script>
-import React from "react";
 import { Toast } from "native-base";
 
 export default {
-  data: function() {
+  data() {
     return {
       stylesObj: {
         mb15: {
@@ -44,27 +43,27 @@ export default {
     };
   },
   methods: {
-    handleBtnPress1: function() {
+    handleBtnPress1() {
       Toast.show({
         text: "Wrong password!",
         buttonText: "Okay"
       });
     },
-    handleBtnPress2: function() {
+    handleBtnPress2() {
       Toast.show({
         text: "Wrong password!",
         buttonText: "Okay",
         type: "success"
       });
     },
-    handleBtnPress3: function() {
+    handleBtnPress3() {
       Toast.show({
         text: "Wrong password!",
         buttonText: "Okay",
         type: "warning"
       });
     },
-    handleBtnPress4: function() {
+    handleBtnPress4() {
       Toast.show({
         text: "Wrong password!",
         buttonText: "Okay",
@@ -74,4 +73,3 @@ export default {
   }
 };
 </script>
-

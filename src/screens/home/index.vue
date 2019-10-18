@@ -3,14 +3,23 @@
     <status-bar :barStyle="'light-content'"></status-bar>
     <image-background :source="launchScreenBg" class="imageContainer">
       <view class="logoContainer" :style="stylesObj.logoContainerStyle">
-        <image-background :source="launchscreenLogo" class="logo" :style="stylesObj.logoStyle" />
+        <image-background
+          :source="launchscreenLogo"
+          class="logo"
+          :style="stylesObj.logoStyle"
+        />
       </view>
       <view class="text-container">
-        <nb-h3 :style="{marginBottom: 8}" class="text-color-white">App To ShowCase</nb-h3>
+        <nb-h3 :style="{ marginBottom: 8 }" class="text-color-white"
+          >App To ShowCase</nb-h3
+        >
         <nb-h3 class="text-color-white">NativeBase Components</nb-h3>
       </view>
       <view :style="{ marginBottom: 80 }">
-        <nb-button :style="stylesObj.btnContainer" :onPress="handleLetGoBtnPress">
+        <nb-button
+          :style="stylesObj.btnContainer"
+          :onPress="handleLetGoBtnPress"
+        >
           <nb-text> Lets Go!</nb-text>
         </nb-button>
       </view>
@@ -29,10 +38,10 @@ export default {
       type: Object
     }
   },
-  data: function() {
+  data() {
     return {
-      launchScreenBg: launchScreenBg,
-      launchscreenLogo: launchscreenLogo,
+      launchScreenBg,
+      launchscreenLogo,
       stylesObj: {
         logoContainerStyle: {
           marginTop: Dimensions.get("window").height / 8
@@ -49,14 +58,13 @@ export default {
     };
   },
   methods: {
-    handleLetGoBtnPress: function() {
+    handleLetGoBtnPress() {
       this.navigation.openDrawer();
     }
   }
 };
 </script>
 
- 
 <style>
 .imageContainer {
   flex: 1;

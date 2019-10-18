@@ -1,40 +1,37 @@
 <template>
   <nb-container :style="{ backgroundColor: '#fff' }">
-        <nb-header>
-          <nb-left>
-            <nb-button
-              transparent
-              :onPress="() => this.props.navigation.goBack()"
-            >
-              <nb-icon name="arrow-back" />
-            </nb-button>
-          </nb-left>
-          <nb-body>
-            <nb-title>Advanced Deck Swiper</nb-title>
-          </nb-body>
-          <nb-right />
-        </nb-header>
-        <view :style="{flex: 1, padding: 12}">
-            <nb-deck-swiper
-                ref="_deckSwiper"
-                :dataSource="cardItemsArr"
-                :looping="isLoopingRequired"
-                :renderEmpty="handleCardEmpty"
-                :renderItem="handleCardRendering"
-            >
-            </nb-deck-swiper>
-        </view>
-        <view :style="stylesObj.bottomBtnContainer">
-          <nb-button iconLeft :onPress="handleDeckSwiperBackBtn">
-            <nb-icon name="arrow-back" />
-            <nb-text>Swipe Left</nb-text>
-          </nb-button>
-          <nb-button iconRight :onPress="handleDeckSwiperForwardBtn">
-            <nb-text>Swipe Right</nb-text>
-            <nb-icon name="arrow-forward" />
-          </nb-button>
-        </View>
-    </nb-container>
+    <nb-header>
+      <nb-left>
+        <nb-button transparent :onPress="() => this.props.navigation.goBack()">
+          <nb-icon name="arrow-back" />
+        </nb-button>
+      </nb-left>
+      <nb-body>
+        <nb-title>Advanced Deck Swiper</nb-title>
+      </nb-body>
+      <nb-right />
+    </nb-header>
+    <view :style="{ flex: 1, padding: 12 }">
+      <nb-deck-swiper
+        ref="_deckSwiper"
+        :dataSource="cardItemsArr"
+        :looping="isLoopingRequired"
+        :renderEmpty="handleCardEmpty"
+        :renderItem="handleCardRendering"
+      >
+      </nb-deck-swiper>
+    </view>
+    <view :style="stylesObj.bottomBtnContainer">
+      <nb-button iconLeft :onPress="handleDeckSwiperBackBtn">
+        <nb-icon name="arrow-back" />
+        <nb-text>Swipe Left</nb-text>
+      </nb-button>
+      <nb-button iconRight :onPress="handleDeckSwiperForwardBtn">
+        <nb-text>Swipe Right</nb-text>
+        <nb-icon name="arrow-forward" />
+      </nb-button>
+    </view>
+  </nb-container>
 </template>
 
 <script>
@@ -48,7 +45,7 @@ import cardFour from "../../../../assets/swiper-4.png";
 import CardComponent from "../common/card";
 
 export default {
-  data: function() {
+  data() {
     return {
       cardItemsArr: [
         {
@@ -88,20 +85,20 @@ export default {
     };
   },
   methods: {
-    handleCardEmpty: function() {
+    handleCardEmpty() {
       return (
         <View>
           <Text>Over </Text>
         </View>
       );
     },
-    handleCardRendering: function(item) {
+    handleCardRendering(item) {
       return <CardComponent item={item} />;
     },
-    handleDeckSwiperBackBtn: function() {
+    handleDeckSwiperBackBtn() {
       this.$refs._deckSwiper._root.swipeLeft();
     },
-    handleDeckSwiperForwardBtn: function() {
+    handleDeckSwiperForwardBtn() {
       this.$refs._deckSwiper._root.swipeRight();
     }
   }

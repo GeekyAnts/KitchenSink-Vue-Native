@@ -1,34 +1,30 @@
 <!-- TODO: Move to react-native-swipe-list-view -->
 
 <template>
-    <nb-container :style="{ backgroundColor: '#fff' }">
-        <nb-header>
-          <nb-left>
-            <nb-button
-              transparent
-              :onPress="() => this.props.navigation.goBack()"
-            >
-              <nb-icon name="arrow-back" />
-            </nb-button>
-          </nb-left>
-          <nb-body>
-            <nb-title>Multiple List Swipe</nb-title>
-          </nb-body>
-          <nb-right />
-        </nb-header>
-        <nb-content>
-            <nb-list
-                :leftOpenValue="75"
-                :rightOpenValue="-75"
-                :dataSource="getListArr()"
-                :renderRow="getListItemRow"
-                :renderLeftHiddenRow="getLeftHiddenRowComponet"
-                :renderRightHiddenRow="getRighttHiddenRowComponet"
-            >
-
-            </nb-list>
-        </nb-content>
-    </nb-container>
+  <nb-container :style="{ backgroundColor: '#fff' }">
+    <nb-header>
+      <nb-left>
+        <nb-button transparent :onPress="() => this.props.navigation.goBack()">
+          <nb-icon name="arrow-back" />
+        </nb-button>
+      </nb-left>
+      <nb-body>
+        <nb-title>Multiple List Swipe</nb-title>
+      </nb-body>
+      <nb-right />
+    </nb-header>
+    <nb-content>
+      <nb-list
+        :leftOpenValue="75"
+        :rightOpenValue="-75"
+        :dataSource="getListArr()"
+        :renderRow="getListItemRow"
+        :renderLeftHiddenRow="getLeftHiddenRowComponet"
+        :renderRightHiddenRow="getRighttHiddenRowComponet"
+      >
+      </nb-list>
+    </nb-content>
+  </nb-container>
 </template>
 
 <script>
@@ -36,7 +32,7 @@ import React from "react";
 import { ListView } from "react-native";
 import { Button, Icon, Text, ListItem } from "native-base";
 export default {
-  data: function() {
+  data() {
     return {
       ds: new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 }),
       basic: true,
@@ -53,13 +49,13 @@ export default {
     };
   },
   methods: {
-    deleteRow: function(secId, rowId, rowMap) {
+    deleteRow(secId, rowId, rowMap) {
       rowMap[`${secId}${rowId}`].props.closeRow();
       const newData = [...this.listViewData];
       newData.splice(rowId, 1);
       this.listViewData = newData;
     },
-    getLeftHiddenRowComponet: function(data) {
+    getLeftHiddenRowComponet(data) {
       return (
         <Button
           full
@@ -75,12 +71,12 @@ export default {
         </Button>
       );
     },
-    getRighttHiddenRowComponet: function(data, secId, rowId, rowMap) {
+    getRighttHiddenRowComponet(data, secId, rowId, rowMap) {
       return (
         <Button
           full
           danger
-          onPress={_ => this.deleteRow(secId, rowId, rowMap)}
+          onPress={() => this.deleteRow(secId, rowId, rowMap)}
           style={{
             flex: 1,
             alignItems: "center",
@@ -91,10 +87,10 @@ export default {
         </Button>
       );
     },
-    getListArr: function() {
+    getListArr() {
       return this.ds.cloneWithRows(this.listViewData);
     },
-    getListItemRow: function(data) {
+    getListItemRow(data) {
       return (
         <ListItem style={{ paddingLeft: 20 }}>
           <Text>{data}</Text>
@@ -104,4 +100,3 @@ export default {
   }
 };
 </script>
-

@@ -1,10 +1,24 @@
 <template>
   <nb-container>
     <nb-content class="sidebar-content-wrapper" :bounces="false">
-      <image :source="drawerCover" class="drawer-cover" :style="stylesObj.drawerCoverObj"/>
-      <image :source="drawerImage" class="drawer-image" :style="stylesObj.drawerImageObj"/>
+      <image
+        :source="drawerCover"
+        class="drawer-cover"
+        :style="stylesObj.drawerCoverObj"
+      />
+      <image
+        :source="drawerImage"
+        class="drawer-image"
+        :style="stylesObj.drawerImageObj"
+      />
       <nb-list>
-        <nb-list-item v-for="data in datas" :key="data.route" button noBorder :onPress="() => handleListItemClick(data)">
+        <nb-list-item
+          v-for="data in datas"
+          :key="data.route"
+          button
+          noBorder
+          :onPress="() => handleListItemClick(data)"
+        >
           <nb-left>
             <nb-icon
               active
@@ -12,13 +26,19 @@
               :style="{ color: '#777', fontSize: 26, width: 30 }"
             />
             <nb-text>
-              {{data.name}}
+              {{ data.name }}
             </nb-text>
           </nb-left>
-          <nb-right v-if="data.types" :style="{flex: 1}">
-            <nb-badge class="list-item-badge-container" :style="{backgroundColor: data.bg}">
-              <nb-text class="list-item-badge-text" :style="stylesObj.badgeText">
-                {{`${data.types} Types`}}
+          <nb-right v-if="data.types" :style="{ flex: 1 }">
+            <nb-badge
+              class="list-item-badge-container"
+              :style="{ backgroundColor: data.bg }"
+            >
+              <nb-text
+                class="list-item-badge-text"
+                :style="stylesObj.badgeText"
+              >
+                {{ `${data.types} Types` }}
               </nb-text>
             </nb-badge>
           </nb-right>
@@ -41,10 +61,10 @@ export default {
       type: Object
     }
   },
-  data: function() {
+  data() {
     return {
-      drawerCover: drawerCover,
-      drawerImage: drawerImage,
+      drawerCover,
+      drawerImage,
       stylesObj: {
         drawerCoverObj: {
           height: deviceHeight / 3.5
@@ -168,7 +188,6 @@ export default {
           route: "NHPicker",
           icon: "arrow-dropdown",
           bg: "#F50C75",
-          bg: "#cc0000",
           types: "9"
         },
         {
@@ -225,7 +244,7 @@ export default {
     };
   },
   methods: {
-    handleListItemClick: function(dataObj) {
+    handleListItemClick(dataObj) {
       this.navigation.navigate(dataObj.route);
     }
   }
@@ -260,6 +279,3 @@ export default {
   text-align: center;
 }
 </style>
-
-
-
