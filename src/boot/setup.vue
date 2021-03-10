@@ -8,8 +8,9 @@
 <script>
 import Vue from "vue-native-core";
 import { VueNativeBase } from "native-base";
-import { AppLoading } from "expo";
+import AppLoading from "expo-app-loading";
 import * as Font from "expo-font";
+import { Ionicons } from "@expo/vector-icons";
 
 import App from "../App.vue";
 
@@ -33,7 +34,7 @@ export default {
         await Font.loadAsync({
           Roboto: require("../../node_modules/native-base/Fonts/Roboto.ttf"),
           Roboto_medium: require("../../node_modules/native-base/Fonts/Roboto_medium.ttf"),
-          Ionicons: require("../../node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/Ionicons.ttf")
+          ionicons: Ionicons.font["ionicons"]
         });
         this.isAppReady = true;
       } catch (error) {

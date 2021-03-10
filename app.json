@@ -1,12 +1,7 @@
 {
   "expo": {
-    "sdkVersion": "35.0.0",
     "icon": "./assets/nblogo.png",
     "slug": "kitchensinkvuenative",
-    "loading": {
-      "hideExponentText": true,
-      "backgroundImage": "./assets/splashscreen.png"
-    },
     "orientation": "portrait",
     "primaryColor": "#cccccc",
     "packagerOpts": {
