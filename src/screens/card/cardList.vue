@@ -21,7 +21,7 @@
         <nb-card-item>
           <nb-left>
             <nb-icon
-              name="logo-googleplus"
+              name="logo-google"
               :style="{ color: '#DD5044' }"
             ></nb-icon>
             <nb-text>
