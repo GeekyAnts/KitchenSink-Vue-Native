@@ -104,7 +104,7 @@
       <nb-list-item icon>
         <nb-left>
           <nb-button :style="{ backgroundColor: '#8F8E93' }">
-            <nb-icon active name="switch" />
+            <nb-icon active name="toggle" />
           </nb-button>
         </nb-left>
         <nb-body>
@@ -131,7 +131,7 @@
       <nb-list-item icon>
         <nb-left>
           <nb-button :style="{ backgroundColor: '#4CDA64' }">
-            <nb-icon name="arrow-dropdown" />
+            <nb-icon name="caret-down" />
           </nb-button>
         </nb-left>
         <nb-body>
@@ -169,7 +169,7 @@
       <nb-list-item last icon>
         <nb-left>
           <nb-button :style="{ backgroundColor: '#007AFF' }">
-            <nb-icon active name="hand" />
+            <nb-icon active name="hand-left" />
           </nb-button>
         </nb-left>
         <nb-body>

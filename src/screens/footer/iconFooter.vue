@@ -29,7 +29,7 @@
         </nb-button>
 
         <nb-button :active="tab4" :onPress="toggleTab4">
-          <nb-icon name="contact" :active="tab4" />
+          <nb-icon name="call" :active="tab4" />
         </nb-button>
       </nb-footer-tab>
     </nb-footer>
