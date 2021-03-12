@@ -46,7 +46,7 @@
           :style="{ width: 45, height: 45, justifyContent: 'center' }"
         />
         <nb-icon
-          name="pie"
+          name="pie-chart"
           :style="{ width: 45, height: 45, justifyContent: 'center' }"
         />
         <nb-icon
@@ -78,7 +78,7 @@
           :style="{ width: 45, height: 45, justifyContent: 'center' }"
         />
         <nb-icon
-          name="paper"
+          name="newspaper"
           :style="{ width: 45, height: 45, justifyContent: 'center' }"
         />
         <nb-icon
@@ -128,7 +128,7 @@
         />
         <nb-icon
           active
-          name="logo-game-controller-a"
+          name="game-controller"
           :style="{ width: 45, height: 45, justifyContent: 'center' }"
         />
         <nb-icon
@@ -137,7 +137,7 @@
         />
         <nb-icon
           active
-          name="microphone"
+          name="mic"
           :style="{ width: 45, height: 45, justifyContent: 'center' }"
         />
         <nb-icon
@@ -221,7 +221,7 @@
         />
         <nb-icon
           active
-          name="chatboxes"
+          name="chatbox"
           :style="{ width: 45, height: 45, justifyContent: 'center' }"
         />
         <nb-icon
@@ -265,11 +265,11 @@
         />
         <nb-icon
           active
-          name="lock"
+          name="lock-closed"
           :style="{ width: 45, height: 45, justifyContent: 'center' }"
         />
         <nb-icon
-          name="skip-backward"
+          name="play-skip-back"
           :style="{ width: 45, height: 45, justifyContent: 'center' }"
         />
         <nb-icon
@@ -283,7 +283,7 @@
         />
         <nb-icon
           active
-          name="skip-forward"
+          name="play-skip-forward"
           :style="{ width: 45, height: 45, justifyContent: 'center' }"
         />
         <nb-icon
@@ -348,7 +348,7 @@
           :style="{ width: 45, height: 45, justifyContent: 'center' }"
         />
         <nb-icon
-          name="hand"
+          name="hand-left"
           :style="{ width: 45, height: 45, justifyContent: 'center' }"
         />
         <nb-icon
@@ -371,7 +371,7 @@
           :style="{ width: 45, height: 45, justifyContent: 'center' }"
         />
         <nb-icon
-          name="logo-googleplus"
+          name="logo-google"
           :style="{ width: 45, height: 45, justifyContent: 'center' }"
         />
         <nb-icon
