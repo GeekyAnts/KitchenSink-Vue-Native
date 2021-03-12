@@ -28,6 +28,7 @@
     "preset": "jest-expo"
   },
   "dependencies": {
+    "@expo/metro-config": "^0.1.57",
     "expo": "^40.0.0",
     "expo-app-loading": "^1.0.1",
     "expo-font": "~8.4.0",
