@@ -5,12 +5,20 @@
     "orientation": "portrait",
     "primaryColor": "#cccccc",
     "packagerOpts": {
+      "config": "metro.config.js",
       "sourceExts": [
+        "expo.ts",
+        "expo.tsx",
+        "expo.js",
+        "expo.jsx",
         "vue",
         "js",
+        "jsx",
         "json",
         "ts",
-        "tsx"
+        "tsx",
+        "svg",
+        "wasm"
       ],
       "assetExts": [
         "ttf"
