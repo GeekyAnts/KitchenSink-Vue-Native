@@ -137,7 +137,7 @@ export default {
         {
           name: "Deck Swiper",
           route: "NHDeckSwiper",
-          icon: "swap",
+          icon: "swap-horizontal",
           bg: "#3591FA",
           types: "2"
         },
@@ -172,7 +172,7 @@ export default {
         {
           name: "List",
           route: "NHList",
-          icon: "lock",
+          icon: "lock-closed",
           bg: "#5DCEE2",
           types: "8"
         },
@@ -186,7 +186,7 @@ export default {
         {
           name: "Picker",
           route: "NHPicker",
-          icon: "arrow-dropdown",
+          icon: "caret-down-circle-outline",
           bg: "#F50C75",
           types: "9"
         },
@@ -237,7 +237,7 @@ export default {
         {
           name: "Typography",
           route: "NHTypography",
-          icon: "paper",
+          icon: "newspaper",
           bg: "#48525D"
         }
       ]
