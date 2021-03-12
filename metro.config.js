@@ -5,14 +5,14 @@
  * @format
  */
 
-const { getDefaultConfig } = require("metro-config");
+const { getDefaultConfig } = require('@expo/metro-config');
 
 const fs = require('fs');
 
 module.exports = (async () => {
   const {
-    resolver: { sourceExts }
-  } = await getDefaultConfig();
+    resolver: { sourceExts, assetExts }
+  } = await getDefaultConfig(__dirname);
   return {
     transformer: {
       babelTransformerPath: require.resolve("./vueTransformerPlugin.js"),
@@ -24,7 +24,8 @@ module.exports = (async () => {
       })
     },
     resolver: {
-      sourceExts: [...sourceExts, "vue"]
+      assetExts: assetExts.filter((ext) => ext !== 'svg'),
+      sourceExts: [...sourceExts, "vue", "svg"]
     }
   };
 })();

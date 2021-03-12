@@ -1,21 +1,24 @@
 {
   "expo": {
-    "sdkVersion": "35.0.0",
     "icon": "./assets/nblogo.png",
     "slug": "kitchensinkvuenative",
-    "loading": {
-      "hideExponentText": true,
-      "backgroundImage": "./assets/splashscreen.png"
-    },
     "orientation": "portrait",
     "primaryColor": "#cccccc",
     "packagerOpts": {
+      "config": "metro.config.js",
       "sourceExts": [
+        "expo.ts",
+        "expo.tsx",
+        "expo.js",
+        "expo.jsx",
         "vue",
         "js",
+        "jsx",
         "json",
         "ts",
-        "tsx"
+        "tsx",
+        "svg",
+        "wasm"
       ],
       "assetExts": [
         "ttf"

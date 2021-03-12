@@ -20,7 +20,7 @@
         </nb-item>
         <nb-item>
           <nb-input placeholder="Icon Alignment in Textbox" />
-          <nb-icon active name="swap" />
+          <nb-icon active name="swap-horizontal" />
         </nb-item>
       </nb-form>
     </nb-content>

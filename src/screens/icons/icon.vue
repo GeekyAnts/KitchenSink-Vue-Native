@@ -60,9 +60,9 @@
             </nb-text>
           </nb-col>
           <nb-col :style="stylesObj.col">
-            <nb-icon name="pie" :style="{ color: '#fac125' }" />
+            <nb-icon name="pie-chart" :style="{ color: '#fac125' }" />
             <nb-text :numberOfLines="1" :style="stylesObj.iconText">
-              pie
+              pie-chart
             </nb-text>
           </nb-col>
           <nb-col :style="stylesObj.col">
@@ -105,9 +105,9 @@
             </nb-text>
           </nb-col>
           <nb-col :style="stylesObj.col">
-            <nb-icon active name="paper" :style="{ color: '#000' }" />
+            <nb-icon active name="newspaper" :style="{ color: '#000' }" />
             <nb-text :numberOfLines="1" :style="stylesObj.iconText">
-              paper
+              newspaper
             </nb-text>
           </nb-col>
         </nb-row>
@@ -180,9 +180,9 @@
 
         <nb-row :style="stylesObj.row">
           <nb-col :style="stylesObj.col">
-            <nb-icon name="microphone" :style="{ color: '#000' }" />
+            <nb-icon name="mic" :style="{ color: '#000' }" />
             <nb-text :numberOfLines="1" :style="stylesObj.iconText">
-              microphone
+              mic
             </nb-text>
           </nb-col>
           <nb-col :style="stylesObj.col">
@@ -279,9 +279,9 @@
 
         <nb-row :style="stylesObj.row">
           <nb-col :style="stylesObj.col">
-            <nb-icon active name="chatboxes" :style="{ color: 'green' }" />
+            <nb-icon active name="chatbox" :style="{ color: 'green' }" />
             <nb-text :numberOfLines="1" :style="stylesObj.iconText">
-              chatboxes
+              chatbox
             </nb-text>
           </nb-col>
           <nb-col :style="stylesObj.col">
@@ -345,9 +345,9 @@
 
         <nb-row :style="stylesObj.row">
           <nb-col :style="stylesObj.col">
-            <nb-icon name="lock" :style="{ color: 'blue' }" />
+            <nb-icon name="lock-closed" :style="{ color: 'blue' }" />
             <nb-text :numberOfLines="1" :style="stylesObj.iconText">
-              lock
+              lock-closed
             </nb-text>
           </nb-col>
           <nb-col :style="stylesObj.col">
@@ -363,9 +363,9 @@
             </nb-text>
           </nb-col>
           <nb-col :style="stylesObj.col">
-            <nb-icon active name="skip-forward" :style="{ color: '#999' }" />
+            <nb-icon active name="play-skip-forward" :style="{ color: '#999' }" />
             <nb-text :numberOfLines="1" :style="stylesObj.iconText">
-              skip-forward
+              play-skip-forward
             </nb-text>
           </nb-col>
           <nb-col :style="stylesObj.col">
@@ -462,9 +462,9 @@
             </nb-text>
           </nb-col>
           <nb-col :style="stylesObj.col">
-            <nb-icon active name="hand" :style="{ color: '#EBAB7F' }" />
+            <nb-icon active name="hand-left" :style="{ color: '#EBAB7F' }" />
             <nb-text :numberOfLines="1" :style="stylesObj.iconText">
-              hand
+              hand-left
             </nb-text>
           </nb-col>
           <nb-col :style="stylesObj.col">
@@ -495,9 +495,9 @@
             </nb-text>
           </nb-col>
           <nb-col :style="stylesObj.col">
-            <nb-icon name="logo-googleplus" :style="{ color: '#DC4A38' }" />
+            <nb-icon name="logo-google" :style="{ color: '#DC4A38' }" />
             <nb-text :numberOfLines="1" :style="stylesObj.iconText">
-              logo-googleplus
+              logo-google
             </nb-text>
           </nb-col>
           <nb-col :style="stylesObj.col">

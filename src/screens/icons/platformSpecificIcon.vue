@@ -27,8 +27,8 @@
             <nb-text>alarm</nb-text>
           </nb-col>
           <nb-col :style="stylesObj.col">
-            <nb-icon ios="ios-paper" android="md-paper" />
-            <nb-text>paper</nb-text>
+            <nb-icon ios="ios-newspaper" android="md-newspaper" />
+            <nb-text>newspaper</nb-text>
           </nb-col>
           <nb-col :style="stylesObj.col">
             <nb-icon ios="ios-cart" android="md-cart" />

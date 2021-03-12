@@ -17,7 +17,7 @@
           <nb-icon name="heart" />
         </nb-button>
         <nb-button transparent>
-          <nb-icon name="more" />
+          <nb-icon name="ellipsis-vertical" />
         </nb-button>
       </nb-right>
     </nb-header>
