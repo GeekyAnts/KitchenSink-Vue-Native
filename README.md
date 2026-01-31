@@ -8,6 +8,16 @@ This project was bootstrapped with [Vue Native Cli](https://github.com/GeekyAnts
 | :---------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------: |
 | ![ios-demo](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/iOS.gif) | ![android-demo](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/Android.gif) |
 
+
+## About
+
+   KitchenSink for Vue Native - showcasing all components,
+   built by [GeekyAnts](https://geekyants.com?utm_source=github&utm_medium=opensource&utm_campaign=kitchensink-vue-native).
+
+   For professional [mobile engineering](https://geekyants.com/service/hire-mobile-app-development-services?utm_source=github&utm_medium=opensource&utm_campaign=kitchensink-vue-native)
+   and [cross-platform development](https://geekyants.com/solution/universal-and-cross-platform-app-development-services?utm_source=github&utm_medium=opensource&utm_campaign=kitchensink-vue-native),
+   [contact our team](https://geekyants.com/hire?utm_source=github&utm_medium=opensource&utm_campaign=kitchensink-vue-native).
+
 ## Installation
 
 * **Clone and install packages**
